@@ -1,121 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('html/_head.htm',{
-"title":"active chats"
-})
+
+<head>
+	<title>active chats</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230104224559">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 <body>
-   <div class="wrapper">
-      @@include('html/_header-full.htm',{})
-      <main class="page">
-         <section class="page__chats-full full-chats">
-            <div class="full-chats__container">
-               <div class="full-chats__wrapper">
-                  <div class="full-chats__navigation navigation-full-chats">
-                     <div class="navigation-full-chats__top">
-                        <div class="navigation-full-chats__avatar-user avatar-user-chats"><img src="@img/avatar.jpg"
-                              alt="avatar"></div>
-                        <form action="#" class="navigation-full-chats__form navigation-chats-form">
-                           <button type="submit" class="navigation-chats-form__button _icon-Search"></button>
-                           <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-                              placeholder="Search dialog..." class="navigation-chats-form__search">
-                        </form>
-                     </div>
-                     <div class="navigation-full-chats__body navigation-chats-body">
-                        <div class="navigation-chats-body__dialog dialog-chats-navigation _active-chats-navigation">
-                           <a href="#" class="dialog-chats-navigation__body">
-                              <div class="dialog-chats-navigation__avatar"><img src="@img/ava-message/ava_message1.jpg"
-                                    alt="ava message"></div>
-                              <div class="dialog-chats-navigation__content">
-                                 <div class="dialog-chats-navigation__name">Amanda</div>
-                                 <div class="dialog-chats-navigation__message"> Hello! How are you? Hello! How are you?
-                                    Hello! How are you? Hello! How are you? Hello! How are you? Hello! How are you?
-                                 </div>
-                              </div>
-                           </a>
-                           <div class="dialog-chats-navigation__date">09:42</div>
-                        </div>
-                        <div class="navigation-chats-body__dialog dialog-chats-navigation">
-                           <a href="#" class="dialog-chats-navigation__body">
-                              <div class="dialog-chats-navigation__avatar"><img src="@img/ava-message/ava_message2.jpg"
-                                    alt="ava message"></div>
-                              <div class="dialog-chats-navigation__content">
-                                 <div class="dialog-chats-navigation__name">Joe</div>
-                                 <div class="dialog-chats-navigation__message">Hello! How are you?</div>
-                              </div>
-                           </a>
-                           <div class="dialog-chats-navigation__date">09:42</div>
-                        </div>
-                        <div class="navigation-chats-body__dialog dialog-chats-navigation">
-                           <a href="#" class="dialog-chats-navigation__body">
-                              <div class="dialog-chats-navigation__avatar"><img src="@img/ava-message/ava_message3.jpg"
-                                    alt="ava message"></div>
-                              <div class="dialog-chats-navigation__content">
-                                 <div class="dialog-chats-navigation__name">Thomas</div>
-                                 <div class="dialog-chats-navigation__message">Hello! How are you?</div>
-                              </div>
-                           </a>
-                           <div class="dialog-chats-navigation__date">09:42</div>
-                        </div>
-                        <div class="navigation-chats-body__dialog dialog-chats-navigation">
-                           <a href="#" class="dialog-chats-navigation__body">
-                              <div class="dialog-chats-navigation__avatar"><img src="@img/ava-message/ava_message4.jpg"
-                                    alt="ava message"></div>
-                              <div class="dialog-chats-navigation__content">
-                                 <div class="dialog-chats-navigation__name">Aleksandr</div>
-                                 <div class="dialog-chats-navigation__message">Hello! How are you?</div>
-                              </div>
-                           </a>
-                           <div class="dialog-chats-navigation__date">09:42</div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="full-chats__window-full window-full-chats">
-                     <div class="window-full-chats__body">
-                        <div class="window-full-chats__header header-full-chats">
-                           <div class="header-full-chats__content">
-                              <div class="header-full-chats__back _icon-Arrow"><a href="#">Back</a></div>
-                              <div class="header-full-chats__name">Amanda</div>
-                              <div class="header-full-chats__avatar"><img src="@img/ava-message/ava_message1.jpg"
-                                    alt="">
-                              </div>
-                           </div>
-                        </div>
-                        <div class="window-full-chats__messages message-chat">
-                           <div class="message-chat__from">
-                              <div class="message-chat__body-from">
-                                 <div class="message-chat__ava"><img src="@img/ava-message/ava_message1.jpg" alt="ava">
-                                 </div>
-                                 <div class="message-chat__text">Hello! How are you?</div>
-                              </div>
-                           </div>
-                           <div class="message-chat__to">
-                              <div class="message-chat__body-to">
-                                 <div class="message-chat__ava"><img src="@img/ava-message/ava_message2.jpg" alt="ava">
-                                 </div>
-                                 <div class="message-chat__text">Hi, everything is great!</div>
-                              </div>
-                           </div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__row">
+					<div class="header__logo header__logo_profile"><img src="img/Logo.png" alt="PROS NOW"></div>
+					<div class="header__location">
+						<span class="header__icon"><img src="img/icons/Gps-blue.svg" alt="gps"></span>
+						<span class="header__city">Los Angeles</span>
+					</div>
+					<!--  <a class="header__button header__button_pro button button_blue" href="#">Join as a pro</a>
+         <a class="header__button button button_white" href="#">Log in</a>
+         <a class="header__button button button_lightblue" href="#">Sign in</a> -->
+					<div class="header__online online-key _active-online">
+						<div class="online-key__body">
+							<div class="online-key__indicator"></div>
+						</div>
+						<div class="online-key__text">Online</div>
+					</div>
+					<div class="header__alerts _icon-Notifications"></div>
+					<div class="header__profile">
+						<div class="header__avatar"><img src="img/avatar.jpg" alt="avatar"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__chats-full full-chats">
+				<div class="full-chats__container">
+					<div class="full-chats__wrapper">
+						<div class="full-chats__navigation navigation-full-chats">
+							<div class="navigation-full-chats__top">
+								<div class="navigation-full-chats__avatar-user avatar-user-chats"><img src="img/avatar.jpg" alt="avatar"></div>
+								<form action="#" class="navigation-full-chats__form navigation-chats-form">
+									<button type="submit" class="navigation-chats-form__button _icon-Search"></button>
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Search dialog..." class="navigation-chats-form__search">
+								</form>
+							</div>
+							<div class="navigation-full-chats__body navigation-chats-body">
+								<div class="navigation-chats-body__dialog dialog-chats-navigation _active-chats-navigation">
+									<a href="#" class="dialog-chats-navigation__body">
+										<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message1.jpg" alt="ava message"></div>
+										<div class="dialog-chats-navigation__content">
+											<div class="dialog-chats-navigation__name">Amanda</div>
+											<div class="dialog-chats-navigation__message"> Hello! How are you? Hello! How are you?
+												Hello! How are you? Hello! How are you? Hello! How are you? Hello! How are you?
+											</div>
+										</div>
+									</a>
+									<div class="dialog-chats-navigation__date">09:42</div>
+								</div>
+								<div class="navigation-chats-body__dialog dialog-chats-navigation">
+									<a href="#" class="dialog-chats-navigation__body">
+										<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message2.jpg" alt="ava message"></div>
+										<div class="dialog-chats-navigation__content">
+											<div class="dialog-chats-navigation__name">Joe</div>
+											<div class="dialog-chats-navigation__message">Hello! How are you?</div>
+										</div>
+									</a>
+									<div class="dialog-chats-navigation__date">09:42</div>
+								</div>
+								<div class="navigation-chats-body__dialog dialog-chats-navigation">
+									<a href="#" class="dialog-chats-navigation__body">
+										<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message3.jpg" alt="ava message"></div>
+										<div class="dialog-chats-navigation__content">
+											<div class="dialog-chats-navigation__name">Thomas</div>
+											<div class="dialog-chats-navigation__message">Hello! How are you?</div>
+										</div>
+									</a>
+									<div class="dialog-chats-navigation__date">09:42</div>
+								</div>
+								<div class="navigation-chats-body__dialog dialog-chats-navigation">
+									<a href="#" class="dialog-chats-navigation__body">
+										<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message4.jpg" alt="ava message"></div>
+										<div class="dialog-chats-navigation__content">
+											<div class="dialog-chats-navigation__name">Aleksandr</div>
+											<div class="dialog-chats-navigation__message">Hello! How are you?</div>
+										</div>
+									</a>
+									<div class="dialog-chats-navigation__date">09:42</div>
+								</div>
+							</div>
+						</div>
+						<div class="full-chats__window-full window-full-chats">
+							<div class="window-full-chats__body">
+								<div class="window-full-chats__header header-full-chats">
+									<div class="header-full-chats__content">
+										<div class="header-full-chats__back _icon-Arrow"><a href="#">Back</a></div>
+										<div class="header-full-chats__name">Amanda</div>
+										<div class="header-full-chats__avatar"><img src="img/ava-message/ava_message1.jpg" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="window-full-chats__messages message-chat">
+									<div class="message-chat__from">
+										<div class="message-chat__body-from">
+											<div class="message-chat__ava"><img src="img/ava-message/ava_message1.jpg" alt="ava">
+											</div>
+											<div class="message-chat__text">Hello! How are you?</div>
+										</div>
+									</div>
+									<div class="message-chat__to">
+										<div class="message-chat__body-to">
+											<div class="message-chat__ava"><img src="img/ava-message/ava_message2.jpg" alt="ava">
+											</div>
+											<div class="message-chat__text">Hi, everything is great!</div>
+										</div>
+									</div>
 
-                        </div>
-                        <div class="window-full-chats__enter">
-                           <form action="#" class="window-full-chats__form">
-                              <textarea class="window-full-chats__message" name="message" id="full-chats-message"
-                                 placeholder="Message..."></textarea>
-                              <button type="submit" class="window-full-chats__button"><img
-                                    src="@img/icons/Arrow-send.svg" alt="-->"></button>
-                           </form>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-      </main>
-      @@include('html/_footer.htm',{})
-   </div>
-   @@include('html/_popup.htm',{})
-   @@include('html/_js.htm',{})
+								</div>
+								<div class="window-full-chats__enter">
+									<form action="#" class="window-full-chats__form">
+										<textarea class="window-full-chats__message" name="message" id="full-chats-message" placeholder="Message..."></textarea>
+										<button type="submit" class="window-full-chats__button"><img src="img/icons/Arrow-send.svg" alt="-->"></button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230104224559"></script>
 </body>
 
 </html>
