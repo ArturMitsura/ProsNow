@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Account settings</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230105233837">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__row">
+					<div class="header__logo header__logo_profile"><img src="img/Logo.png" alt="PROS NOW"></div>
+					<div class="header__location">
+						<span class="header__icon"><img src="img/icons/Gps-blue.svg" alt="gps"></span>
+						<span class="header__city">Los Angeles</span>
+					</div>
+					<!--  <a class="header__button header__button_pro button button_blue" href="#">Join as a pro</a>
+         <a class="header__button button button_white" href="#">Log in</a>
+         <a class="header__button button button_lightblue" href="#">Sign in</a> -->
+					<div class="header__online online-key _active-online">
+						<div class="online-key__body">
+							<div class="online-key__indicator"></div>
+						</div>
+						<div class="online-key__text">Online</div>
+					</div>
+					<div class="header__alerts _icon-Notifications"></div>
+					<div class="header__profile">
+						<div class="header__avatar"><img src="img/avatar.jpg" alt="avatar"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__settings-account account-settings">
+				<div class="account-settings__container">
+					<div class="account-settings__navigation settings-navigation">
+						<a href="account_settings.html" class="settings-navigation__link settings-navigation__link_active _icon-User2"><span>Account</span></a>
+						<a href="security_settings.html" class="settings-navigation__link _icon-Security"><span>Security</span></a>
+						<a href="#" class="settings-navigation__link _icon-Cube2"><span>Projects</span></a>
+					</div>
+					<div class="account-settings__body">
+						<div class="account-settings__correction correction-account-settings">
+							<form action="#" class="correction-account-settings__form">
+								<div class="correction-account-settings__user-ava">
+									<div class="correction-account-settings__avatar"><img src="img/avatar.jpg" alt="avatar">
+									</div>
+									<div class="correction-account-settings__load">
+										<div class="correction-account-settings__inputs">
+											<div class="correction-account-settings__file-row">
+												<input autocomplete="off" type="file" accept=".jpg, .png, .jpeg" name="form[]" data-error="Ошибка" placeholder="" class="correction-account-settings__file">
+												<div class="correction-account-settings__file-btn  button_lightblue">Upload</div>
+											</div>
+											<button autocomplete="off" type="reset" name="form[]" data-error="Ошибка" placeholder="" class="correction-account-settings__reset button_white-border">Reset
+											</button>
+										</div>
+										<div class="correction-account-settings__type-photo">Allowed file types: png, jpg, jpeg.
+										</div>
+									</div>
+								</div>
+								<div class="correction-account-settings__user-data">
+									<div class="correction-account-settings__row">
+										<label class="correction-account-settings__label" for="first-name-label">First
+											name</label>
+										<input data-validate autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="" class="correction-account-settings__input" id="first-name-label">
+									</div>
+									<div class="correction-account-settings__row">
+										<label class="correction-account-settings__label" for="last-name-label">Last name</label>
+										<input data-validate autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="" class="correction-account-settings__input" id="last-name-label">
+									</div>
+									<div class="correction-account-settings__row correction-account-settings__row_end">
+										<label class="correction-account-settings__label" for="zip-code-label">ZIP Code</label>
+										<input data-validate autocomplete="off" type="number" name="form[]" data-error="Error" placeholder="" class="correction-account-settings__input" id="zip-code-label">
+									</div>
+									<div class="correction-account-settings__row">
+										<label class="correction-account-settings__label" for="e-mail-label">E-mail</label>
+										<input data-validate data-required="email" autocomplete="off" type="email" name="form[]" data-error="Error" placeholder="" class="correction-account-settings__input" id="e-mail-label">
+									</div>
+									<div class="correction-account-settings__row">
+										<label class="correction-account-settings__label" for="phone-label">Phone</label>
+										<input data-validate autocomplete="off" type="number" name="form[]" data-error="Error" placeholder="" class="correction-account-settings__input" id="phone-label">
+									</div>
+								</div>
+								<div class="correction-account-settings__buttons">
+									<button type="submit" class="correction-account-settings__button button button_lightblue">Save
+										change</button>
+									<a href="#" class="correction-account-settings__button button button_white-border">Discard</a>
+								</div>
+							</form>
+						</div>
+						<div class="account-settings__delete delete-account-settings">
+							<div class="delete-account-settings__title title__settings">Delete Account</div>
+							<form action="#" class="delete-account-settings__form">
+								<div class="delete-account-settings__question">Are you sure you want to delete your account?
+								</div>
+								<div class="delete-account-settings__question delete-account-settings__question_second">Once you
+									delete your account, there is no going back. Please be certain.</div>
+								<input class="delete-account-settings__input" id="delete-account-confirm" type="checkbox" name="form[]" class="input">
+								<label class="delete-account-settings__label" for="delete-account-confirm">I confirm my account
+									deactivation</label>
+								<button type="submit" class="delete-account-settings__button button button_red">Deactivate
+									Account</button>
+							</form>
+						</div>
+						<div class="account-settings__projects projects-account-settings">
+							<div class="projects-account-settings__title title__settings">Featured Projects</div>
+							<form action="#" class="projects-account-settings__form">
+								<div class="projects-account-settings__inputs">
+									<div class="projects-account-settings__file-row">
+										<input autocomplete="off" type="file" accept=".jpg, .png, .jpeg" name="form[]" data-error="Error" placeholder="" class="projects-account-settings__file">
+										<div class="projects-account-settings__file-btn  button_blue">Upload new photos</div>
+									</div>
+									<button type="submit" name="form[]" class="projects-account-settings__select _icon-sellect-all button_lightblue">Select All
+									</button>
+								</div>
+								<div class="projects-account-settings__images">
+									<div class="projects-account-settings__image"><img src="img/people/male-plumber.jpg" alt="cleaner"></div>
+									<div class="projects-account-settings__image"><img src="img/people/professional2_mobile.jpg" alt="professional"></div>
+									<div class="projects-account-settings__image"><img src="img/people/man_mobile.jpg" alt="man with dog"></div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="profile-widthphoto__dialog dialog-message">
+					<div class="dialog-message__button _icon-Dialog1"><span class="dialog-message__amount">23</span></div>
+				</a>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+	<div id="start-conversation" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__title">Chats</div>
+				<div class="navigation-chats-body">
+					<div class="navigation-chats-body__dialog dialog-chats-navigation">
+						<a href="#" class="dialog-chats-navigation__body">
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message1.jpg" alt="ava message"></div>
+							<div class="dialog-chats-navigation__content">
+								<div class="dialog-chats-navigation__name">Amanda</div>
+							</div>
+						</a>
+					</div>
+					<div class="navigation-chats-body__dialog dialog-chats-navigation">
+						<a href="#" class="dialog-chats-navigation__body">
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message2.jpg" alt="ava message"></div>
+							<div class="dialog-chats-navigation__content">
+								<div class="dialog-chats-navigation__name">Joe</div>
+							</div>
+						</a>
+					</div>
+					<div class="navigation-chats-body__dialog dialog-chats-navigation">
+						<a href="#" class="dialog-chats-navigation__body">
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message3.jpg" alt="ava message"></div>
+							<div class="dialog-chats-navigation__content">
+								<div class="dialog-chats-navigation__name">Thomas</div>
+							</div>
+						</a>
+					</div>
+					<div class="navigation-chats-body__dialog dialog-chats-navigation">
+						<a href="#" class="dialog-chats-navigation__body">
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message4.jpg" alt="ava message"></div>
+							<div class="dialog-chats-navigation__content">
+								<div class="dialog-chats-navigation__name">Aleksandr</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ====================================================================== -->
+
+	<div id="chat-window" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<div class="popup__text">
+					Text
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230105233837"></script>
+</body>
+
+</html>

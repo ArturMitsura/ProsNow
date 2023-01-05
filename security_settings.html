@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Security settings</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230105233837">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__row">
+					<div class="header__logo header__logo_profile"><img src="img/Logo.png" alt="PROS NOW"></div>
+					<div class="header__location">
+						<span class="header__icon"><img src="img/icons/Gps-blue.svg" alt="gps"></span>
+						<span class="header__city">Los Angeles</span>
+					</div>
+					<!--  <a class="header__button header__button_pro button button_blue" href="#">Join as a pro</a>
+         <a class="header__button button button_white" href="#">Log in</a>
+         <a class="header__button button button_lightblue" href="#">Sign in</a> -->
+					<div class="header__online online-key _active-online">
+						<div class="online-key__body">
+							<div class="online-key__indicator"></div>
+						</div>
+						<div class="online-key__text">Online</div>
+					</div>
+					<div class="header__alerts _icon-Notifications"></div>
+					<div class="header__profile">
+						<div class="header__avatar"><img src="img/avatar.jpg" alt="avatar"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__settings-account account-settings">
+				<div class="account-settings__container">
+					<div class="account-settings__navigation settings-navigation">
+						<a href="account_settings.html" class="settings-navigation__link _icon-User2"><span>Account</span></a>
+						<a href="security_settings.html" class="settings-navigation__link settings-navigation__link_active _icon-Security"><span>Security</span></a>
+						<a href="#" class="settings-navigation__link _icon-Cube2"><span>Projects</span></a>
+					</div>
+					<div class="security-settings__body">
+						<div class="security-settings__delete delete-security-settings">
+							<div class="delete-security-settings__title title__settings">Delete Account</div>
+							<form action="#" class="delete-security-settings__form">
+								<div class="delete-security-settings__inputs">
+									<div class="delete-security-settings__row delete-security-settings__row_1">
+										<label for="delete-current-password" class="delete-security-settings__label">Current
+											password</label>
+										<div class="delete-security-settings__wrapper">
+											<input id="delete-current-password" autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder="" class="delete-security-settings__input">
+											<button type="button" class="delete-security-settings__viewpass viewpass-form-eye _icon-Eye"></button>
+										</div>
+									</div>
+									<div class="delete-security-settings__row delete-security-settings__row_2">
+										<label for="delete-new-password" class="delete-security-settings__label">New
+											Password</label>
+										<div class="delete-security-settings__wrapper">
+											<input id="delete-new-password" autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder="" class="delete-security-settings__input">
+											<button type="button" class="delete-security-settings__viewpass viewpass-form-eye _icon-Eye"></button>
+										</div>
+									</div>
+									<div class="delete-security-settings__row delete-security-settings__row_3">
+										<label for="delete-retype-password" class="delete-security-settings__label">Retype New
+											Password</label>
+										<div class="delete-security-settings__wrapper">
+											<input id="delete-retype-password" autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder="" class="delete-security-settings__input">
+											<button type="button" class="delete-security-settings__viewpass viewpass-form-eye _icon-Eye"></button>
+										</div>
+									</div>
+								</div>
+								<div class="delete-security-settings__requirements">
+									<div class="delete-security-settings__title title__settings_noborder">Password requirements:
+									</div>
+									<ul class="delete-security-settings__list">
+										<li class="delete-security-settings__item">Minimum 8 characters long - the more, the
+											better</li>
+										<li class="delete-security-settings__item">At least one lowercase character</li>
+										<li class="delete-security-settings__item"> At least one number, symbol, or whitespace
+											character</li>
+									</ul>
+								</div>
+								<div class="delete-security-settings__buttons">
+									<button type="submit" class="delete-security-settings__button button button_lightblue">Save
+										change</button>
+									<a href="#" class="delete-security-settings__button button button_white-border">Discard</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="profile-widthphoto__dialog dialog-message">
+					<div class="dialog-message__button _icon-Dialog1"><span class="dialog-message__amount">23</span></div>
+				</a>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+	<div id="start-conversation" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__title">Chats</div>
+				<div class="navigation-chats-body">
+					<div class="navigation-chats-body__dialog dialog-chats-navigation">
+						<a href="#" class="dialog-chats-navigation__body">
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message1.jpg" alt="ava message"></div>
+							<div class="dialog-chats-navigation__content">
+								<div class="dialog-chats-navigation__name">Amanda</div>
+							</div>
+						</a>
+					</div>
+					<div class="navigation-chats-body__dialog dialog-chats-navigation">
+						<a href="#" class="dialog-chats-navigation__body">
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message2.jpg" alt="ava message"></div>
+							<div class="dialog-chats-navigation__content">
+								<div class="dialog-chats-navigation__name">Joe</div>
+							</div>
+						</a>
+					</div>
+					<div class="navigation-chats-body__dialog dialog-chats-navigation">
+						<a href="#" class="dialog-chats-navigation__body">
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message3.jpg" alt="ava message"></div>
+							<div class="dialog-chats-navigation__content">
+								<div class="dialog-chats-navigation__name">Thomas</div>
+							</div>
+						</a>
+					</div>
+					<div class="navigation-chats-body__dialog dialog-chats-navigation">
+						<a href="#" class="dialog-chats-navigation__body">
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message4.jpg" alt="ava message"></div>
+							<div class="dialog-chats-navigation__content">
+								<div class="dialog-chats-navigation__name">Aleksandr</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ====================================================================== -->
+
+	<div id="chat-window" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<div class="popup__text">
+					Text
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230105233837"></script>
+</body>
+
+</html>
