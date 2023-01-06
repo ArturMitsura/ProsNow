@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Security settings</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230107003344">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__row">
+					<div class="header__logo header__logo_profile"><img src="img/Logo.png" alt="PROS NOW"></div>
+					<div class="header__location">
+						<span class="header__icon"><img src="img/icons/Gps-blue.svg" alt="gps"></span>
+						<span class="header__city">Los Angeles</span>
+					</div>
+					<!--  <a class="header__button header__button_pro button button_blue" href="#">Join as a pro</a>
+         <a class="header__button button button_white" href="#">Log in</a>
+         <a class="header__button button button_lightblue" href="#">Sign in</a> -->
+					<div class="header__online online-key _active-online">
+						<div class="online-key__body">
+							<div class="online-key__indicator"></div>
+						</div>
+						<div class="online-key__text">Online</div>
+					</div>
+					<div class="header__alerts _icon-Notifications"></div>
+					<div class="header__profile">
+						<div class="header__avatar"><img src="img/avatar.jpg" alt="avatar"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__settings-account account-settings">
+				<div class="account-settings__container">
+					<div class="account-settings__navigation settings-navigation">
+						<a href="account_settings.html" class="settings-navigation__link _icon-User2"><span>Account</span></a>
+						<a href="security_settings.html" class="settings-navigation__link _icon-Security"><span>Security</span></a>
+						<a href="projects_settings.html" class="settings-navigation__link settings-navigation__link_active _icon-Cube2"><span>Projects</span></a>
+					</div>
+					<div class="projects-settings__body">
+						<div class="projects-settings__title title__settings">Projects</div>
+						<div class="projects-settings__add projects-security-add">
+							<div class="projects-security-add__block">
+								<a href="#" data-popup="#new-project" class="projects-security-add__btn button button_lightblue"><span>Add new
+										project</span></a>
+							</div>
+							<form action="#" class="projects-settings__form form-projects-settings">
+								<div class="form-projects-settings__search">
+									<div class="form-projects-settings__show">Show entries<span>10</span></div>
+									<div class="form-projects-settings__top">
+										<button type="submit" class="form-projects-settings__button _icon-Search"></button>
+										<input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Search" class="form-projects-settings__input">
+									</div>
+								</div>
+								<div class="form-projects-settings__table table-projects-settings">
+									<div class="table-projects-settings__body">
+										<div class="table-projects-settings__header">
+											<div class="table-projects-settings__name">
+												<div class="sort-project-btns">
+													<button type="button" class="sort-project-btn sort-project-btn__name sort-project-btn__name_max"></button>
+													<button type="button" class="sort-project-btn sort-project-btn__name sort-project-btn__name_min"></button>
+												</div>
+												<span>NAME</span>
+											</div>
+											<div class="table-projects-settings__description">
+												<div class="sort-project-btns">
+													<button type="button" class="sort-project-btn sort-project-btn__description sort-project-btn__description_max"></button>
+													<button type="button" class="sort-project-btn sort-project-btn__description sort-project-btn__description_min"></button>
+												</div>
+												<span>DESCRIPTION</span>
+											</div>
+											<div class="table-projects-settings__services">
+												<div class="sort-project-btns">
+													<button type="button" class="sort-project-btn sort-project-btn__services sort-project-btn__services_max"></button>
+													<button type="button" class="sort-project-btn sort-project-btn__services sort-project-btn__services_min"></button>
+												</div>
+												<span>SERVICES</span>
+											</div>
+											<div class="table-projects-settings__photos">PHOTOS</div>
+											<div class="table-projects-settings__action">ACTIONS</div>
+										</div>
+										<div class="table-projects-settings__wrapp-data">
+											<div class="table-projects-settings__data">
+												<div class="table-projects-settings__name-data">
+													<input id="table-project-name1" type="checkbox" name="form[]" class="table-projects-settings__name-input">
+													<label for="table-project-name1" class="table-projects-settings__name-label">Test
+														project</label>
+												</div>
+												<div class="table-projects-settings__description-data">
+													<div class="table-projects-settings__title-moby">DESCRIPTION:</div><span>Test
+														project</span>
+												</div>
+												<div class="table-projects-settings__services-data">
+													<div class="table-projects-settings__title-moby">SERVICES:</div>
+													<img src="img/icons/House.svg" alt="Cleaning">
+													<div class="table-projects-settings__service-moby">House Cleaning</div>
+												</div>
+												<div class="table-projects-settings__photos-data">
+													<div class="table-projects-settings__title-moby">PHOTOS:</div>
+													<img src="img/icon_cleaner.jpg" alt="cleaner">
+												</div>
+												<div class="table-projects-settings__action-data">
+													<button type="submit" class="table-projects-settings__del"><img src="img/icons/edit.svg" alt="edit">
+													</button>
+													<button type="submit" class="table-projects-settings__edit"><img src="img/icons/del.svg" alt="del">
+													</button>
+												</div>
+											</div>
+											<div class="table-projects-settings__data">
+												<div class="table-projects-settings__name-data">
+													<input id="table-project-name2" type="checkbox" name="form[]" class="table-projects-settings__name-input">
+													<label for="table-project-name2" class="table-projects-settings__name-label">Test
+														project</label>
+												</div>
+												<div class="table-projects-settings__description-data">
+													<div class="table-projects-settings__title-moby">DESCRIPTION:</div><span>Test
+														project</span>
+												</div>
+												<div class="table-projects-settings__services-data">
+													<div class="table-projects-settings__title-moby">SERVICES:</div>
+													<img src="img/icons/House.svg" alt="Cleaning">
+													<div class="table-projects-settings__service-moby">House Cleaning</div>
+												</div>
+												<div class="table-projects-settings__photos-data">
+													<div class="table-projects-settings__title-moby">PHOTOS:</div>
+													<img src="img/icon_cleaner.jpg" alt="cleaner">
+												</div>
+												<div class="table-projects-settings__action-data">
+													<button type="submit" class="table-projects-settings__del"><img src="img/icons/edit.svg" alt="edit">
+													</button>
+													<button type="submit" class="table-projects-settings__edit"><img src="img/icons/del.svg" alt="del">
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="table-projects-settings__nav nav-projects-settings">
+										<div class="nav-projects-settings__info">
+											<div class="nav-projects-settings__showing">Showing <span class="nav-projects-settings__from">1</span> to <span class="nav-projects-settings__to">1</span> of <span class="nav-projects-settings__all">1</span> entries</div>
+										</div>
+										<div class="nav-projects-settings__buttons">
+											<button class="nav-projects-settings__prev">PREVIOUS</button>
+											<span class="nav-projects-settings__page">1</span>
+											<button class="nav-projects-settings__next">NEXT</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="profile-widthphoto__dialog dialog-message">
+					<div class="dialog-message__button _icon-Dialog1"><span class="dialog-message__amount">23</span></div>
+				</a>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+	<div id="start-conversation" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__title">Chats</div>
+				<div class="navigation-chats-body">
+					<div class="navigation-chats-body__dialog dialog-chats-navigation">
+						<a href="#" class="dialog-chats-navigation__body">
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message1.jpg" alt="ava message"></div>
+							<div class="dialog-chats-navigation__content">
+								<div class="dialog-chats-navigation__name">Amanda</div>
+							</div>
+						</a>
+					</div>
+					<div class="navigation-chats-body__dialog dialog-chats-navigation">
+						<a href="#" class="dialog-chats-navigation__body">
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message2.jpg" alt="ava message"></div>
+							<div class="dialog-chats-navigation__content">
+								<div class="dialog-chats-navigation__name">Joe</div>
+							</div>
+						</a>
+					</div>
+					<div class="navigation-chats-body__dialog dialog-chats-navigation">
+						<a href="#" class="dialog-chats-navigation__body">
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message3.jpg" alt="ava message"></div>
+							<div class="dialog-chats-navigation__content">
+								<div class="dialog-chats-navigation__name">Thomas</div>
+							</div>
+						</a>
+					</div>
+					<div class="navigation-chats-body__dialog dialog-chats-navigation">
+						<a href="#" class="dialog-chats-navigation__body">
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message4.jpg" alt="ava message"></div>
+							<div class="dialog-chats-navigation__content">
+								<div class="dialog-chats-navigation__name">Aleksandr</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ====================================================================== -->
+
+	<div id="new-project" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup__content_new-project">
+				<div class="popup__title popup__title_big">
+					New project
+				</div>
+				<div class="new-project-popup">
+					<form action="#" class="new-project-popup__form">
+						<div class="new-project-popup__inputs">
+							<div class="new-project-popup__row">
+								<label for="new-project-title" class="new-project-popup__label">Title</label>
+								<input data-validate id="new-project-title" class="new-project-popup__inp" autocomplete="off" type="text" name="form[]" data-error="" placeholder="">
+							</div>
+							<div class="new-project-popup__row">
+								<label for="new-project-services" class="new-project-popup__label">Services</label>
+								<input id="new-project-services" class="new-project-popup__inp" autocomplete="off" type="text" name="form[]" data-error="" placeholder="">
+							</div>
+						</div>
+						<div class="new-project-popup__row">
+							<label for="new-project-description" class="new-project-popup__label">Description</label>
+							<textarea name="form[]" id="new-project-description" class="new-project-popup__textarea"></textarea>
+						</div>
+						<div class="new-project-popup__item new-project-popup__item_long">
+							<input type="file" name="form[]" accept=".jpg, .png, .gif" class="new-project-popup__input">
+							<div class="new-project-popup__file-area">
+								<div class="new-project-popup__file-instruction">
+									<span>Drop photos here or click to upload.</span>
+									<span>Upload new photos</span>
+								</div>
+								<div class="new-project-popup__file-icon _icon-Upload"></div>
+							</div>
+						</div>
+						<div class="new-project-popup__create">
+							<button type="submit" class="new-project-popup__button button button_blue _fw">Create</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230107003344"></script>
+</body>
+
+</html>
