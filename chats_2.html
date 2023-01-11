@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230103230750">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230111213407">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,23 +18,60 @@
 			<div class="header__container">
 				<div class="header__row">
 					<div class="header__logo header__logo_profile"><img src="img/Logo.png" alt="PROS NOW"></div>
-					<div class="header__location">
+					<div data-da=".menu__body, 767.98, 2" class="header__location">
 						<span class="header__icon"><img src="img/icons/Gps-blue.svg" alt="gps"></span>
 						<span class="header__city">Los Angeles</span>
+						<form action="#" class="header__location-body location-form">
+							<div class="location-form__row">
+								<button type="submit" class="location-form__button"><img src="img/icons/gps-mini.svg" alt="gps"></button>
+								<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="Enter your location " class="location-form__input">
+							</div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27398945304!2d-118.69191443935257!3d34.02016132021932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z0JvQvtGBLdCQ0L3QtNC20LXQu9C10YEsINCa0LDQu9C40YTQvtGA0L3QuNGPLCDQodCo0JA!5e0!3m2!1sru!2sca!4v1673352287944!5m2!1sru!2sca" width="306" height="256" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+							</iframe>
+						</form>
 					</div>
-					<!--  <a class="header__button header__button_pro button button_blue" href="#">Join as a pro</a>
-         <a class="header__button button button_white" href="#">Log in</a>
-         <a class="header__button button button_lightblue" href="#">Sign in</a> -->
 					<div class="header__online online-key _active-online">
 						<div class="online-key__body">
 							<div class="online-key__indicator"></div>
 						</div>
 						<div class="online-key__text">Online</div>
 					</div>
-					<div class="header__alerts _icon-Notifications"></div>
-					<div class="header__profile">
-						<div class="header__avatar"><img src="img/avatar.jpg" alt="avatar"></div>
+					<div class="header__alerts _icon-Notifications _alertsSMS">
+						<div class="header__alerts-body alerts-body">
+							<div class="alerts-body__title">Notifications</div>
+							<ul class="alerts-body__list">
+								<li class="alerts-body__item"><a class="alerts-body__link" href="#"></a></li>
+								<li class="alerts-body__item"><a class="alerts-body__link" href="#"></a></li>
+								<li class="alerts-body__item"><a class="alerts-body__link" href="#"></a></li>
+							</ul>
+							<div class="alerts-body__zero">No notifications yet</div>
+						</div>
 					</div>
+					<div class="header__profile icon-menu">
+						<div class="header__avatar"><img src="img/avatar.jpg" alt="avatar"></div>
+						<nav class="header__menu-pc menu-pc">
+							<ul class="menu-pc__list">
+								<li class="menu-pc__item"><a class="menu-pc__link _icon-User2" href="#">Profile</a></li>
+								<li class="menu-pc__item"><a class="menu-pc__link menu-pc__link_border _icon-Dialog1" href="#">Chats</a></li>
+								<li class="menu-pc__item"><a class="menu-pc__link _icon-Settings" href="#">Settings</a></li>
+								<li class="menu-pc__item"><a class="menu-pc__link _icon-faq" href="#">FAQ</a></li>
+								<li class="menu-pc__item"><a class="menu-pc__link _icon-Logout" href="#">Logout</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__menu menu">
+					<!-- <button type="button" class="menu__icon"><span></span></button> -->
+					<nav class="menu__body">
+						<a href="#" class="menu__logo"><img src="img/Logo.png" alt="Logo"></a>
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link _icon-User2">Profile</a></li>
+							<li class="menu__item"><a href="#" class="menu__link _icon-Dialog1">Chats</a></li>
+							<li class="menu__item"><a href="#" class="menu__link _icon-Settings">Settings</a></li>
+							<li class="menu__item"><a href="#" class="menu__link _icon-faq">FAQ</a></li>
+							<li class="menu__item"><a href="#" class="menu__link _icon-Logout">Logout</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</header>
@@ -68,10 +105,22 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__title"><span>Contacts</span></div>
+				<div class="footer__contacts contacts-block">
+					<div class="contacts-block__icon"><a href="mailto:prosnowcorp@gmail.com"><img src="img/icons/Email-blue.svg" alt="Email"></a></div>
+					<a class="contacts-block__link" href="mailto:prosnowcorp@gmail.com">Prosnowcorp@gmail.com</a>
+					<p class="contacts-block__regards">Best way to get answer faster!</p>
+				</div>
+				<div class="footer__copyright">
+					<p>COPYRIGHT © 2022 <a href="#">Pros Now</a>, All rights ReservedHand-crafted & Made with</p>
+				</div>
+				<button data-goto-speed="1500" data-goto=".wrapper" data-da=".footer__title, 1340" type="button" class="footer__arrow">
+					<img src="img/icons/Arrow-top.svg" alt="top">
+				</button>
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230103230750"></script>
+	<script src="js/app.min.js?_v=20230111213407"></script>
 </body>
 
 </html>
