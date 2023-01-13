@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230112220530">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230113212133">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,25 +51,25 @@
 						<div class="header__avatar"><img src="img/avatar.jpg" alt="avatar"></div>
 						<nav class="header__menu-pc menu-pc">
 							<ul class="menu-pc__list">
-								<li class="menu-pc__item"><a class="menu-pc__link _icon-User2" href="#">Profile</a></li>
-								<li class="menu-pc__item"><a class="menu-pc__link menu-pc__link_border _icon-Dialog1" href="#">Chats</a></li>
-								<li class="menu-pc__item"><a class="menu-pc__link _icon-Settings" href="#">Settings</a></li>
-								<li class="menu-pc__item"><a class="menu-pc__link _icon-faq" href="#">FAQ</a></li>
-								<li class="menu-pc__item"><a class="menu-pc__link _icon-Logout" href="#">Logout</a></li>
+								<li class="menu-pc__item"><a class="menu-pc__link _icon-User2" href="profile_with_photo.html">Profile</a></li>
+								<li class="menu-pc__item"><a class="menu-pc__link menu-pc__link_border _icon-Dialog1" href="active_chats.html">Chats</a></li>
+								<li class="menu-pc__item"><a class="menu-pc__link _icon-Settings" href="account_settings.html">Settings</a></li>
+								<li class="menu-pc__item"><a class="menu-pc__link _icon-faq" href="faq_payment.html">FAQ</a></li>
+								<li class="menu-pc__item"><a class="menu-pc__link _icon-Logout" href="home.html">Logout</a></li>
 							</ul>
 						</nav>
 					</div>
 				</div>
 				<div class="header__menu menu">
-					<!-- <button type="button" class="menu__icon"><span></span></button> -->
 					<nav class="menu__body">
 						<a href="#" class="menu__logo"><img src="img/Logo.png" alt="Logo"></a>
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link _icon-User2">Profile</a></li>
-							<li class="menu__item"><a href="#" class="menu__link _icon-Dialog1">Chats</a></li>
-							<li class="menu__item"><a href="#" class="menu__link _icon-Settings">Settings</a></li>
-							<li class="menu__item"><a href="#" class="menu__link _icon-faq">FAQ</a></li>
-							<li class="menu__item"><a href="#" class="menu__link _icon-Logout">Logout</a></li>
+							<li class="menu__item"><a href="profile_with_photo.html" class="menu__link _icon-User2">Profile</a></li>
+							<li class="menu__item"><a href="active_chats.html" class="menu__link _icon-Dialog1">Chats</a></li>
+							<li class="menu__item"><a href="account_settings.html" class="menu__link _icon-Settings">Settings</a>
+							</li>
+							<li class="menu__item"><a href="faq_payment.html" class="menu__link _icon-faq">FAQ</a></li>
+							<li class="menu__item"><a href="home.html" class="menu__link _icon-Logout">Logout</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -92,10 +92,10 @@
 									<div class="correction-account-settings__load">
 										<div class="correction-account-settings__inputs">
 											<div class="correction-account-settings__file-row">
-												<input autocomplete="off" type="file" accept=".jpg, .png, .jpeg" name="form[]" data-error="Ошибка" placeholder="" class="correction-account-settings__file">
+												<input autocomplete="off" type="file" accept=".jpg, .png, .jpeg" name="form[]" data-error="" placeholder="" class="correction-account-settings__file">
 												<div class="correction-account-settings__file-btn  button_lightblue">Upload</div>
 											</div>
-											<button autocomplete="off" type="reset" name="form[]" data-error="Ошибка" placeholder="" class="correction-account-settings__reset button button_white-border">Reset
+											<button autocomplete="off" type="reset" name="form[]" data-error="" placeholder="" class="correction-account-settings__reset button button_white-border">Reset
 											</button>
 										</div>
 										<div class="correction-account-settings__type-photo">Allowed file types: png, jpg, jpeg.
@@ -106,23 +106,23 @@
 									<div class="correction-account-settings__row">
 										<label class="correction-account-settings__label" for="first-name-label">First
 											name</label>
-										<input data-validate autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="" class="correction-account-settings__input" id="first-name-label">
+										<input data-validate autocomplete="off" type="text" name="form[]" data-error="" placeholder="" class="correction-account-settings__input" id="first-name-label">
 									</div>
 									<div class="correction-account-settings__row">
 										<label class="correction-account-settings__label" for="last-name-label">Last name</label>
-										<input data-validate autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="" class="correction-account-settings__input" id="last-name-label">
+										<input data-validate autocomplete="off" type="text" name="form[]" data-error="" placeholder="" class="correction-account-settings__input" id="last-name-label">
 									</div>
 									<div class="correction-account-settings__row correction-account-settings__row_end">
 										<label class="correction-account-settings__label" for="zip-code-label">ZIP Code</label>
-										<input data-validate autocomplete="off" type="number" name="form[]" data-error="Error" placeholder="" class="correction-account-settings__input" id="zip-code-label">
+										<input data-validate autocomplete="off" type="number" name="form[]" data-error="" placeholder="" class="correction-account-settings__input" id="zip-code-label">
 									</div>
 									<div class="correction-account-settings__row">
 										<label class="correction-account-settings__label" for="e-mail-label">E-mail</label>
-										<input data-validate data-required="email" autocomplete="off" type="email" name="form[]" data-error="Error" placeholder="" class="correction-account-settings__input" id="e-mail-label">
+										<input data-validate data-required="email" autocomplete="off" type="email" name="form[]" data-error="" placeholder="" class="correction-account-settings__input" id="e-mail-label">
 									</div>
 									<div class="correction-account-settings__row">
 										<label class="correction-account-settings__label" for="phone-label">Phone</label>
-										<input data-validate autocomplete="off" type="number" name="form[]" data-error="Error" placeholder="" class="correction-account-settings__input" id="phone-label">
+										<input data-validate autocomplete="off" type="number" name="form[]" data-error="" placeholder="" class="correction-account-settings__input" id="phone-label">
 									</div>
 								</div>
 								<div class="correction-account-settings__buttons">
@@ -151,7 +151,7 @@
 							<form action="#" class="projects-account-settings__form">
 								<div class="projects-account-settings__inputs">
 									<div class="projects-account-settings__file-row">
-										<input autocomplete="off" type="file" accept=".jpg, .png, .jpeg" name="form[]" data-error="Error" placeholder="" class="projects-account-settings__file">
+										<input autocomplete="off" type="file" accept=".jpg, .png, .jpeg" name="form[]" data-error="" placeholder="" class="projects-account-settings__file">
 										<div class="projects-account-settings__file-btn  button_blue">Upload new photos</div>
 									</div>
 									<button type="submit" name="form[]" class="projects-account-settings__select _icon-sellect-all button button_lightblue">Select
@@ -180,7 +180,7 @@
 								<div class="navigation-full-chats__avatar-user avatar-user-chats"><img src="img/avatar.jpg" alt="avatar"></div>
 								<form action="#" class="navigation-full-chats__form navigation-chats-form">
 									<button type="submit" class="navigation-chats-form__button _icon-Search"></button>
-									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Search dialog..." class="navigation-chats-form__search">
+									<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="Search dialog..." class="navigation-chats-form__search">
 								</form>
 							</div>
 							<div class="navigation-full-chats__body navigation-chats-body">
@@ -336,7 +336,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230112220530"></script>
+	<script src="js/app.min.js?_v=20230113212133"></script>
 </body>
 
 </html>
