@@ -1925,6 +1925,22 @@ body::after {
   pointer-events: all;
 }
 
+.alerts-body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.alerts-body::-webkit-scrollbar {
+  width: 5px;
+  background-color: #fff;
+}
+
+.alerts-body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .alerts-body__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2350,10 +2366,8 @@ input[type=number]:focus {
   -moz-appearance: textfield;
 }
 
-.no-webp .main-page{
-  background: #eefbff url("../img/background-main.png") 30% -50px/cover no-repeat; }
-
 .main-page {
+  background: #eefbff url("../img/background-main.png") 30% -50px/cover no-repeat;
   max-width: 90rem;
   margin: 0 auto;
 }
@@ -4222,8 +4236,9 @@ input[type=number]:focus {
   font-weight: 300;
 }
 
-.no-webp .window-zero-chats{
-  background: url("../img/chat_background.jpg") center/cover no-repeat; }
+.window-zero-chats {
+  background: url("../img/chat_background.jpg") center/cover no-repeat;
+}
 
 .window-zero-chats__content {
   height: 100%;
@@ -4375,8 +4390,9 @@ input[type=number]:focus {
   width: 100%;
 }
 
-.no-webp .window-full-chats{
-  background: url("../img/chat_background.jpg") center/cover no-repeat; }
+.window-full-chats {
+  background: url("../img/chat_background.jpg") center/cover no-repeat;
+}
 
 .window-full-chats__content {
   height: 100%;
@@ -7319,8 +7335,9 @@ input[type=number]:focus {
     padding: 1.125rem 0 1.3125rem 0;
   }
 
-  .no-webp .main-page{
-    background: url("../img/background-main.png") 30% 0/cover no-repeat; }
+  .main-page {
+    background: url("../img/background-main.png") 30% 0/cover no-repeat;
+  }
 
   .main-page__description {
     padding-top: 0.875rem;
@@ -7508,10 +7525,8 @@ input[type=number]:focus {
     padding: 0 0 1.5rem 0;
   }
 
-  .no-webp .create-account__info-wrapp{
-    background: url("../img/people/professional2_mobile.jpg") 0 100%/100% auto no-repeat; }
-
   .create-account__info-wrapp {
+    background: url("../img/people/professional2_mobile.jpg") 0 100%/100% auto no-repeat;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7587,10 +7602,8 @@ input[type=number]:focus {
     padding: 0 0 1.5rem 0;
   }
 
-  .no-webp .personal-information__info-wrapp{
-    background: url("../img/people/young-woman_mobile.jpg") 0 100%/100% auto no-repeat; }
-
   .personal-information__info-wrapp {
+    background: url("../img/people/young-woman_mobile.jpg") 0 100%/100% auto no-repeat;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -10591,25 +10604,4 @@ input[type=number]:focus {
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
   }
-}
-
-.webp .main-page{ background: #eefbff url(../img/background-main.webp) 30% -50px/cover no-repeat; }
-
-.webp .window-zero-chats{ background: url(../img/chat_background.webp) center/cover no-repeat; }
-
-.webp .window-full-chats{ background: url(../img/chat_background.webp) center/cover no-repeat; }
-
-@media (max-width: 47.99875em){
-
-  .webp .main-page{ background: url(../img/background-main.webp) 30% 0/cover no-repeat; }
-}
-
-@media (max-width: 47.99875em){
-
-  .webp .create-account__info-wrapp{ background: url(../img/people/professional2_mobile.webp) 0 100%/100% auto no-repeat; }
-}
-
-@media (max-width: 47.99875em){
-
-  .webp .personal-information__info-wrapp{ background: url(../img/people/young-woman_mobile.webp) 0 100%/100% auto no-repeat; }
 }
