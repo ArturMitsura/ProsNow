@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230118132614">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230118214218">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
 		<header data-scroll="250" data-scroll-show class="header">
 			<div class="header__container">
 				<div class="header__row">
-					<div class="header__logo"><picture><source srcset="img/Logo.webp" type="image/webp"><img src="img/Logo.png" alt="PROS NOW"></picture></div>
+					<div class="header__logo"><img src="img/Logo.png" alt="PROS NOW"></div>
 					<div class="header__location header__location_hide">
 						<span class="header__icon"><img src="img/icons/Gps-blue.svg" alt="gps"></span>
 						<span class="header__city">Los Angeles</span>
@@ -40,7 +40,7 @@
 						</div>
 						<button data-goto-speed="1500" data-goto=".how-page" type="button" class="main-page__btn-bottom"><img src="img/icons/Arrow.svg" alt="bottom"></button>
 						<div class="main-page__images">
-							<div class="main-page__image main-page__image_plumber"><picture><source srcset="img/people/plumbe2.webp" type="image/webp"><img src="img/people/plumbe2.png" alt="plumber"></picture>
+							<div class="main-page__image main-page__image_plumber"><img src="img/people/plumbe2.png" alt="plumber">
 							</div>
 							<div data-prlx-parent class="main-page__image main-image">
 								<div data-prlx class="main-image__location main-image__location_1">
@@ -144,22 +144,22 @@
 					</div>
 					<!-------------------------------------------------------------->
 					<div class="marker-container">
-						<div class="marker marker_verification bounce _icon-Security">
+						<div class="marker marker_verification bounce">
 							<!-- <div class="marker__avatar ">
-									<picture><source srcset="img/ava-message/ava_message4.webp" type="image/webp"><img src="img/ava-message/ava_message4.jpg" alt="ava"></picture>
+									<img src="img/ava-message/ava_message4.jpg" alt="ava">
 								</div> -->
 						</div>
 						<!-- <div class="pulse"></div> -->
 						<!-- _active-popup-marker popup-marker_blocked  -->
-						<div class="marker__popup popup-marker _active-popup-marker">
+
+						<div class="marker__popup popup-marker">
 							<div class="popup-marker__body">
 								<div class="popup-marker__top">
-									<div class="popup-marker__avatar"><picture><source srcset="img/ava-message/ava_message4.webp" type="image/webp"><img src="img/ava-message/ava_message4.jpg" alt="ava"></picture>
+									<div class="popup-marker__avatar"><img src="img/ava-message/ava_message4.jpg" alt="ava">
 									</div>
 									<div class="popup-marker__top-content">
 										<div class="popup-marker__name">
 											<span>Joseph Biden</span>
-											<button type="button" class="popup-marker__close"></button>
 										</div>
 										<div class="popup-marker__info">
 											<div class="popup-marker__online-offline">
@@ -183,9 +183,8 @@
 										<div class="popup-marker__row">
 											<div class="popup-marker__check">
 												<span>Background check:</span>
-												<div class="popup-marker__check-verifield">
+												<div class="popup-marker__check-verified">
 													<span>Verifieled</span>
-													<span>Not Verifieled</span>
 												</div>
 											</div>
 										</div>
@@ -203,25 +202,25 @@
 									<a href="#" class="popup-marker__button button button_blue _fw">View profile</a>
 								</div>
 							</div>
-							<div class="popup-marker__triangel"></div>
+
 						</div>
 					</div>
+
 					<br><br><br><br>
 					<div class="marker-container">
 						<div class="marker bounce _icon-Security">
 							<div class="marker__avatar ">
-								<picture><source srcset="img/ava-message/ava_message4.webp" type="image/webp"><img src="img/ava-message/ava_message4.jpg" alt="ava"></picture>
+								<img src="img/ava-message/ava_message4.jpg" alt="ava">
 							</div>
 						</div>
 						<div class="marker__popup popup-marker">
 							<div class="popup-marker__body">
 								<div class="popup-marker__top">
-									<div class="popup-marker__avatar"><picture><source srcset="img/ava-message/ava_message4.webp" type="image/webp"><img src="img/ava-message/ava_message4.jpg" alt="ava"></picture>
+									<div class="popup-marker__avatar"><img src="img/ava-message/ava_message4.jpg" alt="ava">
 									</div>
 									<div class="popup-marker__top-content">
 										<div class="popup-marker__name">
 											<span>Joseph Biden</span>
-											<button type="button" class="popup-marker__close"></button>
 										</div>
 										<div class="popup-marker__info">
 											<div class="popup-marker__online-offline">
@@ -245,9 +244,8 @@
 										<div class="popup-marker__row">
 											<div class="popup-marker__check">
 												<span>Background check:</span>
-												<div class="popup-marker__check-verifield">
-													<span>Verifieled</span>
-													<span>Not Verifieled</span>
+												<div class="popup-marker__failed-verified">
+													<span>Verification failed</span>
 												</div>
 											</div>
 										</div>
@@ -265,26 +263,25 @@
 									<a href="#" class="popup-marker__button button button_blue _fw">View profile</a>
 								</div>
 							</div>
-							<div class="popup-marker__triangel"></div>
+
 						</div>
 					</div>
 					<br><br><br><br><br>
 					<div class="marker-container">
 						<div class="marker-big bounce _icon-Security">
 							<!-- <div class="marker__avatar ">
-									<picture><source srcset="img/ava-message/ava_message4.webp" type="image/webp"><img src="img/ava-message/ava_message4.jpg" alt="ava"></picture>
+									<img src="img/ava-message/ava_message4.jpg" alt="ava">
 								</div> -->
 						</div>
 						<div class="pulse"></div>
 						<div class="marker__popup popup-marker">
 							<div class="popup-marker__body">
 								<div class="popup-marker__top">
-									<div class="popup-marker__avatar"><picture><source srcset="img/ava-message/ava_message4.webp" type="image/webp"><img src="img/ava-message/ava_message4.jpg" alt="ava"></picture>
+									<div class="popup-marker__avatar"><img src="img/ava-message/ava_message4.jpg" alt="ava">
 									</div>
 									<div class="popup-marker__top-content">
 										<div class="popup-marker__name">
 											<span>Joseph Biden</span>
-											<button type="button" class="popup-marker__close"></button>
 										</div>
 										<div class="popup-marker__info">
 											<div class="popup-marker__online-offline">
@@ -308,8 +305,7 @@
 										<div class="popup-marker__row">
 											<div class="popup-marker__check">
 												<span>Background check:</span>
-												<div class="popup-marker__check-verifield">
-													<span>Verifieled</span>
+												<div class="popup-marker__not-verified">
 													<span>Not Verifieled</span>
 												</div>
 											</div>
@@ -328,26 +324,25 @@
 									<a href="#" class="popup-marker__button button button_blue _fw">View profile</a>
 								</div>
 							</div>
-							<div class="popup-marker__triangel"></div>
+
 						</div>
 					</div>
-					<br><br><br><br><br>
+					<br><br>
 					<div class="marker-container">
-						<div class="marker-big marker-big_verification bounce _icon-Security">
+						<div class="marker-big marker-big_verification bounce">
 							<div class="marker-big__avatar ">
-								<picture><source srcset="img/ava-message/ava_message4.webp" type="image/webp"><img src="img/ava-message/ava_message4.jpg" alt="ava"></picture>
+								<img src="img/ava-message/ava_message4.jpg" alt="ava">
 							</div>
 						</div>
 						<div class="pulse"></div>
 						<div class="marker-big__popup popup-marker">
 							<div class="popup-marker__body">
 								<div class="popup-marker__top">
-									<div class="popup-marker__avatar"><picture><source srcset="img/ava-message/ava_message4.webp" type="image/webp"><img src="img/ava-message/ava_message4.jpg" alt="ava"></picture>
+									<div class="popup-marker__avatar"><img src="img/ava-message/ava_message4.jpg" alt="ava">
 									</div>
 									<div class="popup-marker__top-content">
 										<div class="popup-marker__name">
 											<span>Joseph Biden</span>
-											<button type="button" class="popup-marker__close"></button>
 										</div>
 										<div class="popup-marker__info">
 											<div class="popup-marker__online-offline">
@@ -371,9 +366,8 @@
 										<div class="popup-marker__row">
 											<div class="popup-marker__check">
 												<span>Background check:</span>
-												<div class="popup-marker__check-verifield">
+												<div class="popup-marker__check-verified">
 													<span>Verifieled</span>
-													<span>Not Verifieled</span>
 												</div>
 											</div>
 										</div>
@@ -391,7 +385,7 @@
 									<a href="#" class="popup-marker__button button button_blue _fw">View profile</a>
 								</div>
 							</div>
-							<div class="popup-marker__triangel"></div>
+
 						</div>
 					</div>
 				</div>
@@ -407,7 +401,7 @@
 									eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 									nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
 							</div>
-							<div class="card-featured__image-ibg"><picture><source srcset="img/people/professional2_mobile.webp" type="image/webp"><img src="img/people/professional2_mobile.jpg" alt="professional"></picture></div>
+							<div class="card-featured__image-ibg"><img src="img/people/professional2_mobile.jpg" alt="professional"></div>
 						</div>
 						<div class="featured-page__card card-featured">
 							<div class="card-featured__body">
@@ -416,7 +410,7 @@
 									eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 									nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
 							</div>
-							<div class="card-featured__image-ibg"><picture><source srcset="img/people/young-woman_mobile.webp" type="image/webp"><img src="img/people/young-woman_mobile.jpg" alt="young woman"></picture>
+							<div class="card-featured__image-ibg"><img src="img/people/young-woman_mobile.jpg" alt="young woman">
 							</div>
 						</div>
 						<div class="featured-page__card card-featured">
@@ -426,7 +420,7 @@
 									eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 									nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
 							</div>
-							<div class="card-featured__image-ibg"><picture><source srcset="img/people/male-plumber.webp" type="image/webp"><img src="img/people/male-plumber.jpg" alt="plumber"></picture></div>
+							<div class="card-featured__image-ibg"><img src="img/people/male-plumber.jpg" alt="plumber"></div>
 						</div>
 						<div class="featured-page__card card-featured">
 							<div class="card-featured__body">
@@ -435,7 +429,7 @@
 									eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 									nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
 							</div>
-							<div class="card-featured__image-ibg"><picture><source srcset="img/people/man_mobile.webp" type="image/webp"><img src="img/people/man_mobile.jpg" alt="man"></picture></div>
+							<div class="card-featured__image-ibg"><img src="img/people/man_mobile.jpg" alt="man"></div>
 						</div>
 					</div>
 				</div>
@@ -443,7 +437,7 @@
 			<section class="page__choose choose-page">
 				<div class="choose-page__container">
 					<div class="choose-page__body">
-						<div class="choose-page__image"><picture><source srcset="img/choose-pros.webp" type="image/webp"><img src="img/choose-pros.jpg" alt="pros"></picture></div>
+						<div class="choose-page__image"><img src="img/choose-pros.jpg" alt="pros"></div>
 						<div class="choose-page__content">
 							<div class="choose-page__title">Why <span>pros</span> choose us</div>
 							<div class="choose-page__item">
@@ -485,7 +479,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230118132614"></script>
+	<script src="js/app.min.js?_v=20230118214218"></script>
 </body>
 
 </html>
