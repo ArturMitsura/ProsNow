@@ -5739,22 +5739,9 @@
             if (!e.target.closest(".menu__body") && e.target.closest(".menu-open")) menuClose();
         }
         const headerAlerts = document.querySelector(".header__alerts");
-        if (!isMobile.any()) {
-            if (headerAlerts) {
-                headerAlerts.addEventListener("mouseenter", showAlertsPros);
-                headerAlerts.addEventListener("mouseleave", hideAlertsPros);
-            }
-            function showAlertsPros(e) {
-                headerAlerts.classList.add("_alert-Pros");
-            }
-            function hideAlertsPros(e) {
-                headerAlerts.classList.remove("_alert-Pros");
-            }
-        } else {
-            if (headerAlerts) headerAlerts.addEventListener("click", clickAlertsPros);
-            function clickAlertsPros(e) {
-                headerAlerts.classList.toggle("_alert-Pros");
-            }
+        if (headerAlerts) headerAlerts.addEventListener("click", clickAlertsPros);
+        function clickAlertsPros(e) {
+            headerAlerts.classList.toggle("_alert-Pros");
         }
         const headerLocation = document.querySelector(".header__location");
         const headerLocationClick = document.querySelector(".header__icon");
