@@ -2366,10 +2366,8 @@ input[type=number]:focus {
   -moz-appearance: textfield;
 }
 
-.no-webp .main-page{
-  background: #eefbff url("../img/background-main.png") 30% -50px/cover no-repeat; }
-
 .main-page {
+  background: #eefbff url("../img/background-main.png") 30% -50px/cover no-repeat;
   max-width: 90rem;
   margin: 0 auto;
 }
@@ -4239,8 +4237,9 @@ input[type=number]:focus {
   font-weight: 300;
 }
 
-.no-webp .window-zero-chats{
-  background: url("../img/chat_background.jpg") center/cover no-repeat; }
+.window-zero-chats {
+  background: url("../img/chat_background.jpg") center/cover no-repeat;
+}
 
 .window-zero-chats__content {
   height: 100%;
@@ -4392,8 +4391,9 @@ input[type=number]:focus {
   width: 100%;
 }
 
-.no-webp .window-full-chats{
-  background: url("../img/chat_background.jpg") center/cover no-repeat; }
+.window-full-chats {
+  background: url("../img/chat_background.jpg") center/cover no-repeat;
+}
 
 .window-full-chats__content {
   height: 100%;
@@ -6289,12 +6289,8 @@ input[type=number]:focus {
 }
 
 .popup-marker {
-  position: absolute;
-  bottom: 0%;
-  right: 50%;
-  -webkit-transform: translateX(50%);
-      -ms-transform: translateX(50%);
-          transform: translateX(50%);
+  position: relative;
+  display: inline-block;
   background-color: #eefbff;
   padding: 0.9375rem;
   -webkit-box-shadow: 0 0 10px 0px #000;
@@ -6390,6 +6386,8 @@ input[type=number]:focus {
   right: -0.5rem;
   background-color: #eefbff;
   border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px 0px #000;
+          box-shadow: 0 0 10px 0px #000;
 }
 
 .popup-marker__close::before,
@@ -7928,8 +7926,9 @@ input[type=number]:focus {
     padding: 1.125rem 0 1.3125rem 0;
   }
 
-  .no-webp .main-page{
-    background: url("../img/background-main.png") 30% 0/cover no-repeat; }
+  .main-page {
+    background: url("../img/background-main.png") 30% 0/cover no-repeat;
+  }
 
   .main-page__description {
     padding-top: 0.875rem;
@@ -8117,10 +8116,8 @@ input[type=number]:focus {
     padding: 0 0 1.5rem 0;
   }
 
-  .no-webp .create-account__info-wrapp{
-    background: url("../img/people/professional2_mobile.jpg") 0 100%/100% auto no-repeat; }
-
   .create-account__info-wrapp {
+    background: url("../img/people/professional2_mobile.jpg") 0 100%/100% auto no-repeat;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8196,10 +8193,8 @@ input[type=number]:focus {
     padding: 0 0 1.5rem 0;
   }
 
-  .no-webp .personal-information__info-wrapp{
-    background: url("../img/people/young-woman_mobile.jpg") 0 100%/100% auto no-repeat; }
-
   .personal-information__info-wrapp {
+    background: url("../img/people/young-woman_mobile.jpg") 0 100%/100% auto no-repeat;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -11200,25 +11195,4 @@ input[type=number]:focus {
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
   }
-}
-
-.webp .main-page{ background: #eefbff url(../img/background-main.webp) 30% -50px/cover no-repeat; }
-
-.webp .window-zero-chats{ background: url(../img/chat_background.webp) center/cover no-repeat; }
-
-.webp .window-full-chats{ background: url(../img/chat_background.webp) center/cover no-repeat; }
-
-@media (max-width: 47.99875em){
-
-  .webp .main-page{ background: url(../img/background-main.webp) 30% 0/cover no-repeat; }
-}
-
-@media (max-width: 47.99875em){
-
-  .webp .create-account__info-wrapp{ background: url(../img/people/professional2_mobile.webp) 0 100%/100% auto no-repeat; }
-}
-
-@media (max-width: 47.99875em){
-
-  .webp .personal-information__info-wrapp{ background: url(../img/people/young-woman_mobile.webp) 0 100%/100% auto no-repeat; }
 }
