@@ -6300,7 +6300,7 @@ input[type=number]:focus {
   position: relative;
   display: inline-block;
   background-color: #fff;
-  padding: 0.9375rem;
+  padding: 0.625rem;
   border-radius: 0.5rem;
   min-width: 9.375rem;
   opacity: 0;
@@ -6549,14 +6549,16 @@ input[type=number]:focus {
           transform: rotateX(55deg);
 }
 
+.gm-style-iw.gm-style-iw-c {
+  overflow: visible !important;
+}
+
 .btn-map-popup-close {
-  top: -0.625rem !important;
-  right: -0.625rem !important;
-  width: 2.375rem !important;
-  height: 2.375rem !important;
+  top: -0.5625rem !important;
+  right: -0.5625rem !important;
   border-radius: 50% !important;
-  -webkit-box-shadow: 0 0 0.1875rem 0 #000;
-          box-shadow: 0 0 0.1875rem 0 #000;
+  -webkit-box-shadow: 0 0 0.25rem 0 #000;
+          box-shadow: 0 0 0.25rem 0 #000;
 }
 
 .pulse:after {

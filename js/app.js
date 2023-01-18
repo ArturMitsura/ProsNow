@@ -5630,10 +5630,7 @@
                     const scrollTop = window.scrollY;
                     if (scrollTop >= startPoint) {
                         !header.classList.contains("_header-scroll") ? header.classList.add("_header-scroll") : null;
-                        if (headerShow) if (scrollTop > scrollDirection) {
-                            header.classList.contains("_header-show") ? header.classList.remove("_header-show") : null;
-                            console.log(typeof header);
-                        } else !header.classList.contains("_header-show") ? header.classList.add("_header-show") : null;
+                        if (headerShow) if (scrollTop > scrollDirection) header.classList.contains("_header-show") ? header.classList.remove("_header-show") : null; else !header.classList.contains("_header-show") ? header.classList.add("_header-show") : null;
                     } else {
                         header.classList.contains("_header-scroll") ? header.classList.remove("_header-scroll") : null;
                         if (headerShow) header.classList.contains("_header-show") ? header.classList.remove("_header-show") : null;
