@@ -6162,17 +6162,16 @@ input[type=number]:focus {
 }
 
 .marker_verification::before {
-  content: "\e906";
+  content: "";
   font-size: 1.1875rem;
   font-weight: 600;
   position: absolute;
-  width: 1.125rem;
-  height: 1.125rem;
-  color: #1e6ab1;
+  width: 1.375rem;
+  height: 1.375rem;
   z-index: 7;
-  top: 72%;
-  right: 0.5625rem;
-  background-color: #6fe052;
+  top: 66%;
+  right: 0.75rem;
+  background: url("../img/icons/Verification.svg") center/cover no-repeat;
   border-radius: 9px 9px 85% 85%;
   overflow: hidden;
   -webkit-transform: rotate(45deg);
@@ -6226,17 +6225,16 @@ input[type=number]:focus {
 }
 
 .marker-big_verification::before {
-  content: "\e906";
+  content: "";
   font-size: 1.1875rem;
   font-weight: 600;
   position: absolute;
-  width: 1.125rem;
-  height: 1.125rem;
-  color: #1e6ab1;
+  width: 1.375rem;
+  height: 1.375rem;
   z-index: 7;
-  top: 76%;
+  top: 70%;
   right: 0.75rem;
-  background-color: #6fe052;
+  background: url("../img/icons/Verification.svg") center/cover no-repeat;
   border-radius: 9px 9px 85% 85%;
   overflow: hidden;
   -webkit-transform: rotate(45deg);
@@ -6254,6 +6252,8 @@ input[type=number]:focus {
   padding: 0.1875rem;
   position: relative;
   z-index: 5;
+  width: 100%;
+  height: 100%;
 }
 
 .marker__avatar img {
@@ -6263,12 +6263,17 @@ input[type=number]:focus {
   border-radius: 50%;
   overflow: hidden;
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .marker-big__avatar {
   padding: 0.1875rem;
   position: relative;
   z-index: 5;
+  width: 100%;
+  height: 100%;
 }
 
 .marker-big__avatar img {
@@ -6278,6 +6283,9 @@ input[type=number]:focus {
   border-radius: 50%;
   overflow: hidden;
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .marker-big__popup {
@@ -6291,12 +6299,10 @@ input[type=number]:focus {
 .popup-marker {
   position: relative;
   display: inline-block;
-  background-color: #eefbff;
+  background-color: #fff;
   padding: 0.9375rem;
-  -webkit-box-shadow: 0 0 10px 0px #000;
-          box-shadow: 0 0 10px 0px #000;
   border-radius: 0.5rem;
-  min-width: 12.5rem;
+  min-width: 9.375rem;
   opacity: 0;
   pointer-events: none;
   -webkit-transition: all 0.3s ease 0s;
@@ -6314,14 +6320,6 @@ input[type=number]:focus {
 
 .popup-marker_blocked .popup-marker__located {
   display: none;
-}
-
-.popup-marker_blocked .popup-marker__check-verifield span:first-child {
-  display: none;
-}
-
-.popup-marker_blocked .popup-marker__check-verifield span:last-child {
-  display: block;
 }
 
 .popup-marker_blocked .popup-marker__unblock {
@@ -6376,41 +6374,6 @@ input[type=number]:focus {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-}
-
-.popup-marker__close {
-  width: 1.625rem;
-  height: 1.625rem;
-  position: absolute;
-  top: -0.5rem;
-  right: -0.5rem;
-  background-color: #eefbff;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 10px 0px #000;
-          box-shadow: 0 0 10px 0px #000;
-}
-
-.popup-marker__close::before,
-.popup-marker__close::after {
-  content: "";
-  position: absolute;
-  width: 0.125rem;
-  height: 1rem;
-  top: 50%;
-  left: 50%;
-  background-color: #1e6ab1;
-}
-
-.popup-marker__close::before {
-  -webkit-transform: translate(-50%, -50%) rotate(45deg);
-      -ms-transform: translate(-50%, -50%) rotate(45deg);
-          transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.popup-marker__close::after {
-  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-      -ms-transform: translate(-50%, -50%) rotate(-45deg);
-          transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .popup-marker__info {
@@ -6483,7 +6446,7 @@ input[type=number]:focus {
   font-weight: 700;
 }
 
-.popup-marker__check-verifield span:first-child {
+.popup-marker__check-verified span {
   white-space: nowrap;
   padding: 0 0.25rem;
   background-color: #6fe052;
@@ -6491,13 +6454,23 @@ input[type=number]:focus {
   border-radius: 0.5rem;
 }
 
-.popup-marker__check-verifield span:last-child {
+.popup-marker__failed-verified span {
+  display: inline-block;
+  padding: 0.0625rem 0.25rem;
+  background-color: #f64130;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  line-height: 110%;
+}
+
+.popup-marker__not-verified span {
+  display: inline-block;
   white-space: nowrap;
-  padding: 0.125rem 0.25rem;
-  background-color: #f19091;
+  padding: 0.0625rem 0.25rem;
+  background-color: #e6f609;
   color: #1e6ab1;
   border-radius: 0.5rem;
-  display: none;
+  line-height: 110%;
 }
 
 .popup-marker__phone {
@@ -6554,23 +6527,6 @@ input[type=number]:focus {
   padding-left: 0.25rem;
 }
 
-.popup-marker__triangel {
-  position: absolute;
-  width: 0;
-  height: 0;
-  bottom: 0;
-  left: 50%;
-  border-bottom: 0.625rem solid #eefbff;
-  border-right: 0.875rem solid transparent;
-  border-left: 0.875rem solid transparent;
-  -webkit-transform: translateX(60%) rotate(180deg);
-      -ms-transform: translateX(60%) rotate(180deg);
-          transform: translateX(60%) rotate(180deg);
-  -webkit-transform-origin: bottom left;
-      -ms-transform-origin: bottom left;
-          transform-origin: bottom left;
-}
-
 .bounce {
   -webkit-animation-name: bounce;
           animation-name: bounce;
@@ -6591,6 +6547,16 @@ input[type=number]:focus {
   margin: 30px 0px 0px -5px;
   -webkit-transform: rotateX(55deg);
           transform: rotateX(55deg);
+}
+
+.btn-map-popup-close {
+  top: -0.625rem !important;
+  right: -0.625rem !important;
+  width: 2.375rem !important;
+  height: 2.375rem !important;
+  border-radius: 50% !important;
+  -webkit-box-shadow: 0 0 0.1875rem 0 #000;
+          box-shadow: 0 0 0.1875rem 0 #000;
 }
 
 .pulse:after {
