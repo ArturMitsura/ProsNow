@@ -773,6 +773,18 @@ svg path {
   border-radius: 4px;
 }
 
+.select__title:not(:first-of-type) {
+  display: none !important;
+}
+
+._select-active .select__title {
+  font-size: 0rem;
+}
+
+._select-active .select__title .select__row {
+  display: none;
+}
+
 .select__value {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -820,6 +832,40 @@ svg path {
   opacity: 0.5;
 }
 
+._select-active .select__value input {
+  display: none;
+  width: 0rem;
+}
+
+._select-active .select__value .select__asset {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+._select-active .select__value .select__asset img {
+  padding: 0.1875rem;
+  width: 100%;
+}
+
+._select-active .select__value .select__text {
+  white-space: nowrap;
+  overflow: hidden;
+  color: #000;
+}
+
 .select__input {
   outline: none;
   cursor: pointer;
@@ -854,6 +900,7 @@ svg path {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  color: #989898;
 }
 
 .select__input {
@@ -908,6 +955,9 @@ svg path {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-column-gap: 0.1875rem;
+     -moz-column-gap: 0.1875rem;
+          column-gap: 0.1875rem;
 }
 
 .select._select-open {
@@ -7005,6 +7055,15 @@ input[type=number]:focus {
     height: 4.9375rem;
   }
 
+  ._select-active .select__value .select__asset {
+    -ms-flex-preferred-size: 3.125rem;
+        flex-basis: 3.125rem;
+  }
+
+  ._select-active .select__value .select__text {
+    font-size: 1.5rem;
+  }
+
   .select__input {
     font-size: 1.3125rem;
   }
@@ -8775,6 +8834,15 @@ input[type=number]:focus {
     height: 2.6875rem;
   }
 
+  ._select-active .select__value .select__asset {
+    -ms-flex-preferred-size: 1.25rem;
+        flex-basis: 1.25rem;
+  }
+
+  ._select-active .select__value .select__text {
+    font-size: 0.75rem;
+  }
+
   .select__input {
     font-size: 0.75rem;
   }
@@ -9354,6 +9422,32 @@ input[type=number]:focus {
 @supports not (height: clamp( 2.6875rem , 1.6261792453rem  +  4.5283018868vw , 4.9375rem )) {
     .select__value {
       height: calc(2.6875rem + 2.25 * (100vw - 23.4375rem) / 49.6875);
+    }
+}
+
+@supports (flex-basis: clamp( 1.25rem , 0.3655660377rem  +  3.7735849057vw , 3.125rem )) {
+    ._select-active .select__value .select__asset {
+      -ms-flex-preferred-size: clamp( 1.25rem , 0.3655660377rem  +  3.7735849057vw , 3.125rem );
+          flex-basis: clamp( 1.25rem , 0.3655660377rem  +  3.7735849057vw , 3.125rem );
+    }
+}
+
+@supports not (flex-basis: clamp( 1.25rem , 0.3655660377rem  +  3.7735849057vw , 3.125rem )) {
+    ._select-active .select__value .select__asset {
+      -ms-flex-preferred-size: calc(1.25rem + 1.875 * (100vw - 23.4375rem) / 49.6875);
+          flex-basis: calc(1.25rem + 1.875 * (100vw - 23.4375rem) / 49.6875);
+    }
+}
+
+@supports (font-size: clamp( 0.75rem , 0.3962264151rem  +  1.5094339623vw , 1.5rem )) {
+    ._select-active .select__value .select__text {
+      font-size: clamp( 0.75rem , 0.3962264151rem  +  1.5094339623vw , 1.5rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.3962264151rem  +  1.5094339623vw , 1.5rem )) {
+    ._select-active .select__value .select__text {
+      font-size: calc(0.75rem + 0.75 * (100vw - 23.4375rem) / 49.6875);
     }
 }
 

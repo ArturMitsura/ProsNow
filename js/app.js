@@ -4262,6 +4262,7 @@
                 selectOptionContentHTML += selectOption.textContent;
                 selectOptionContentHTML += selectOptionData ? `</span>` : "";
                 selectOptionContentHTML += selectOptionData ? `</span>` : "";
+                console.log(selectOptionContentHTML);
                 return selectOptionContentHTML;
             }
             getSelectPlaceholder(originalSelect) {
@@ -4369,7 +4370,7 @@
                 const selectOptions = this.getSelectElement(selectItem, this.selectClasses.classSelectOptions).selectElement;
                 const selectOptionsItems = selectOptions.querySelectorAll(`.${this.selectClasses.classSelectOption}`);
                 const _this = this;
-                selectInput.addEventListener("input", (function() {
+                if (selectInput) selectInput.addEventListener("input", (function() {
                     selectOptionsItems.forEach((selectOptionsItem => {
                         if (selectOptionsItem.textContent.toUpperCase().includes(selectInput.value.toUpperCase())) selectOptionsItem.hidden = false; else selectOptionsItem.hidden = true;
                     }));

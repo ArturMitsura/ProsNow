@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230118214218">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230119182027">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -97,40 +97,39 @@
 					<div class="map-page__container">
 						<form action="#" class="map-page__form form-main">
 							<div class="form-main__help">
+								<!-- select2-hidden-accessible data-select2-id="2" -->
 								<select data-placeholder="0" data-search data-scroll="270" class="form-main__select" name="form[]" data-class-modif="form-main">
-									<option data-class="form-main__icons" value="">I need help width</option>
-									<option data-class="form-main__icons _icon-Wrench2" value="b"><span class=""></span>Handyman
-									</option>
-									<option data-class="form-main__icons _icon-House" value="c"><span class=""></span>House
-										Cleaning</option>
-									<option data-class="form-main__icons _icon-Moving-truck" value="d"><span class=""></span>Local moving (under 50
-										miles)</option>
-									<option data-class="form-main__icons _icon-Wrench1" value="e"><span class=""></span>Appliance
-										repair
-									</option>
-									<option data-class="form-main__icons _icon-Delivery-truck" value="f"><span class=""></span>Furniture moving
-									</option>
-									<option data-class="form-main__icons _icon-Carpet-cleaner" value="g"><span class="">Carpet
-											cleaning water</span>
-									</option>
-									<option data-class="form-main__icons _icon-Hard-drive" value="h"><span class=""></span>Damage
-										cleanup and
-										Restoration</option>
-									<option data-class="form-main__icons _icon-Window-cleaner" value="j"><span class=""></span>Window cleaning
-									</option>
-									<option data-class="form-main__icons _icon-Tiles" value="kl"><span class=""></span>Tile and
-										grout
-										cleaning</option>
-									<option data-class="form-main__icons _icon-Cleaning-brush" value="q"><span class="_icon-Cleaning-brush">Roof
-											cleaning</span></option>
-									<option data-class="form-main__icons _icon-Garage" value="rr"><span class=""></span>Garage,
-										Basement or
-										Attic cleaning</option>
-									<option data-class="form-main__icons _icon-Flor-mop" value="yy"><span class=""></span>Floor
-										cleaning
-									</option>
-									<option data-class="form-main__icons _icon-Solar-panel" value="uu"><span class=""></span>Solar panel cleaning
-									</option>
+									<option value="" selected>I need help with </option>
+									<optgroup label="Popular Services">
+										<!-- <option data-asset="https://pros-now.com/storage/services/icons/handyman1.png" value="1">
+											Handyman</option> -->
+										<option data-asset="img/icons/Carpet-cleaner.svg" value="1">
+											Handyman</option>
+										<option data-asset="img/icons/Carpet-cleaner.svg" value="2">
+											Movers</option>
+										<option data-asset="img/icons/Carpet-cleaner.svg" value="3">
+											Plumbers</option>
+										<option data-asset="img/icons/Carpet-cleaner.svg" value="4">Auto mechanics</option>
+										<option data-asset="img/icons/Carpet-cleaner.svg" value="5">
+											Dog walkers</option>
+									</optgroup>
+									<optgroup label="Other">
+										<option data-asset="img/icons/Carpet-cleaner.svg" value="6">
+											Locksmith</option>
+										<option data-asset="img/icons/Carpet-cleaner.svg" value="7">
+											Cleaning service</option>
+										<option data-asset="img/icons/Carpet-cleaner.svg" value="8">
+											Painters</option>
+										<option data-asset="img/icons/Carpet-cleaner.svg" value="9">Photographers</option>
+										<option data-asset="img/icons/Carpet-cleaner.svg" value="10">
+											Barbers</option>
+										<option data-asset="img/icons/Carpet-cleaner.svg" value="11">
+											Personal trainers</option>
+										<option data-asset="img/icons/Carpet-cleaner.svg" value="12">
+											Massage services</option>
+										<option data-asset="img/icons/Carpet-cleaner.svg" value="13">
+											Make up artists</option>
+									</optgroup>
 								</select>
 							</div>
 							<div class="form-main__zip">
@@ -152,7 +151,7 @@
 						<!-- <div class="pulse"></div> -->
 						<!-- _active-popup-marker popup-marker_blocked  -->
 
-						<div class="marker__popup popup-marker">
+						<div class="marker__popup popup-marker _active-popup-marker">
 							<div class="popup-marker__body">
 								<div class="popup-marker__top">
 									<div class="popup-marker__avatar"><img src="img/ava-message/ava_message4.jpg" alt="ava">
@@ -479,7 +478,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230118214218"></script>
+	<script src="js/app.min.js?_v=20230119182027"></script>
 </body>
 
 </html>
