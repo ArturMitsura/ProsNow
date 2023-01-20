@@ -6,11 +6,13 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230119182027">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230120170638">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230120170638"></script>
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20230120170638" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20230120170638"></script>
 </head>
 
 <body>
@@ -98,36 +100,34 @@
 						<form action="#" class="map-page__form form-main">
 							<div class="form-main__help">
 								<!-- select2-hidden-accessible data-select2-id="2" -->
-								<select data-placeholder="0" data-search data-scroll="270" class="form-main__select" name="form[]" data-class-modif="form-main">
-									<option value="" selected>I need help with </option>
+								<select id="services" data-placeholder="I need help with" data-search="Search" class="form-main__select select2-hidden-accessible" name="form[]" data-class-modif="form-main" hidden="" data-id="1" data-speed="150" data-select2-id="services" tabindex="-1" aria-hidden="true">
+									<option value="" data-select2-id="2">I need help with</option>
 									<optgroup label="Popular Services">
-										<!-- <option data-asset="https://pros-now.com/storage/services/icons/handyman1.png" value="1">
-											Handyman</option> -->
-										<option data-asset="img/icons/Carpet-cleaner.svg" value="1">
+										<option data-icon="img/icons/Cleaning-brush.svg" value="1">
 											Handyman</option>
-										<option data-asset="img/icons/Carpet-cleaner.svg" value="2">
+										<option data-icon="https://pros-now.com/storage/services/icons/movers.png" value="2">
 											Movers</option>
-										<option data-asset="img/icons/Carpet-cleaner.svg" value="3">
+										<option data-icon="https://pros-now.com/storage/services/icons/plumbers.png" value="3">
 											Plumbers</option>
-										<option data-asset="img/icons/Carpet-cleaner.svg" value="4">Auto mechanics</option>
-										<option data-asset="img/icons/Carpet-cleaner.svg" value="5">
+										<option data-icon="https://pros-now.com/storage/services/icons/auto-mechanics.png" value="4">Auto mechanics</option>
+										<option data-icon="https://pros-now.com/storage/services/icons/dog-walkers.png" value="5">
 											Dog walkers</option>
 									</optgroup>
 									<optgroup label="Other">
-										<option data-asset="img/icons/Carpet-cleaner.svg" value="6">
+										<option data-icon="https://pros-now.com/storage/services/icons/locksmith.png" value="6">
 											Locksmith</option>
-										<option data-asset="img/icons/Carpet-cleaner.svg" value="7">
+										<option data-icon="https://pros-now.com/storage/services/icons/cleaning.png" value="7">
 											Cleaning service</option>
-										<option data-asset="img/icons/Carpet-cleaner.svg" value="8">
+										<option data-icon="https://pros-now.com/storage/services/icons/painters.png" value="8">
 											Painters</option>
-										<option data-asset="img/icons/Carpet-cleaner.svg" value="9">Photographers</option>
-										<option data-asset="img/icons/Carpet-cleaner.svg" value="10">
+										<option data-icon="https://pros-now.com/storage/services/icons/photographers.png" value="9">Photographers</option>
+										<option data-icon="https://pros-now.com/storage/services/icons/barbers.png" value="10">
 											Barbers</option>
-										<option data-asset="img/icons/Carpet-cleaner.svg" value="11">
+										<option data-icon="https://pros-now.com/storage/services/icons/trainers.png" value="11">
 											Personal trainers</option>
-										<option data-asset="img/icons/Carpet-cleaner.svg" value="12">
+										<option data-icon="https://pros-now.com/storage/services/icons/massage.png" value="12">
 											Massage services</option>
-										<option data-asset="img/icons/Carpet-cleaner.svg" value="13">
+										<option data-icon="https://pros-now.com/storage/services/icons/make-up.png" value="13">
 											Make up artists</option>
 									</optgroup>
 								</select>
@@ -478,7 +478,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230119182027"></script>
+	<script src="js/app.min.js?_v=20230120170638"></script>
 </body>
 
 </html>
