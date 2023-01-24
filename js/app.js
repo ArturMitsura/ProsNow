@@ -5457,34 +5457,6 @@
                 document.documentElement.classList.remove("_chatPros");
             }
         }
-        $(document).ready((function() {
-            let $select = $("#services").select2();
-            const _template = icon => {
-                if (!icon.id) return icon.text;
-                let $option = $(icon.element);
-                let $image = `<span class="bg-white me-1 p-25"><img class="img-cover" src="${$option.data("icon")}" width="20" height="20" /></span>`;
-                return $image + icon.text;
-            };
-            $select.select2({
-                dropdownAutoWidth: true,
-                allowClear: true,
-                width: "100%",
-                dropdownParent: $select.parent(),
-                templateResult: _template,
-                templateSelection: _template,
-                escapeMarkup: function(es) {
-                    return es;
-                }
-            });
-            $("#services").one("select2:open", (function(e) {
-                $("input.select2-search__field").prop("placeholder", "⌕ search");
-            }));
-            $((function() {
-                $(".select2").on("click", (function() {
-                    $(".select2-dropdown").slideToggle(0).slideToggle(600);
-                }));
-            }));
-        }));
         window["FLS"] = true;
         isWebp();
         addTouchClass();
