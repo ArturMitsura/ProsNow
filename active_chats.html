@@ -6,10 +6,13 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230116192149">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230124154623">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230124154623"></script>
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20230124154623" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20230124154623"></script>
 </head>
 
 <body>
@@ -17,7 +20,7 @@
 		<header data-scroll="250" data-scroll-show class="header">
 			<div class="header__container">
 				<div class="header__row">
-					<div class="header__logo header__logo_profile"><picture><source srcset="img/Logo.webp" type="image/webp"><img src="img/Logo.png" alt="PROS NOW"></picture></div>
+					<div class="header__logo header__logo_profile"><img src="img/Logo.png" alt="PROS NOW"></div>
 					<div data-da=".menu__body, 767.98, 2" class="header__location">
 						<span class="header__icon"><img src="img/icons/Gps-blue.svg" alt="gps"></span>
 						<span class="header__city">Los Angeles</span>
@@ -42,14 +45,14 @@
 					</div>
 					<div class="header__alerts _icon-Notifications _alertsSMS">
 
-						<div class="header__alerts-body alerts-body">
+						<div class="header__alerts-body alerts-body _loading-alerts">
 							<div class="alerts-body__title">
 								<p>Notifications</p>
 								<p><span>1</span> New</p>
 							</div>
 							<ul class="alerts-body__list">
 								<li class="alerts-body__item alerts-body__item_sms"><a class="alerts-body__link" href="#">
-										<div class="alerts-body__icon"><picture><source srcset="img/ava-message/ava_message3.webp" type="image/webp"><img src="img/ava-message/ava_message3.jpg" alt="ava"></picture></div>
+										<div class="alerts-body__icon"><img src="img/ava-message/ava_message3.jpg" alt="ava"></div>
 										<div class="alerts-body__content">
 											<div class="alerts-body__top-info">
 												<p><span>New message</span> received</p>
@@ -93,7 +96,7 @@
 						<div class="header__alerts-counter"><span>9</span></div>
 					</div>
 					<div class="header__profile icon-menu">
-						<div class="header__avatar"><picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="avatar"></picture></div>
+						<div class="header__avatar"><img src="img/avatar.jpg" alt="avatar"></div>
 						<nav class="header__menu-pc menu-pc">
 							<ul class="menu-pc__list">
 								<li class="menu-pc__item"><a class="menu-pc__link _icon-User2" href="profile_with_photo.html">Profile</a></li>
@@ -107,7 +110,7 @@
 				</div>
 				<div class="header__menu menu">
 					<nav class="menu__body">
-						<a href="#" class="menu__logo"><picture><source srcset="img/Logo.webp" type="image/webp"><img src="img/Logo.png" alt="Logo"></picture></a>
+						<a href="#" class="menu__logo"><img src="img/Logo.png" alt="Logo"></a>
 						<ul class="menu__list">
 							<li class="menu__item"><a href="profile_with_photo.html" class="menu__link _icon-User2">Profile</a></li>
 							<li class="menu__item"><a href="active_chats.html" class="menu__link _icon-Dialog1">Chats</a></li>
@@ -126,7 +129,7 @@
 					<div class="full-chats__wrapper">
 						<div class="full-chats__navigation-full navigation-full-chats">
 							<div class="navigation-full-chats__top">
-								<div class="navigation-full-chats__avatar-user avatar-user-chats"><picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="avatar"></picture></div>
+								<div class="navigation-full-chats__avatar-user avatar-user-chats"><img src="img/avatar.jpg" alt="avatar"></div>
 								<form action="#" class="navigation-full-chats__form navigation-chats-form">
 									<button type="submit" class="navigation-chats-form__button _icon-Search"></button>
 									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Search dialog..." class="navigation-chats-form__search">
@@ -135,7 +138,7 @@
 							<div class="navigation-full-chats__body navigation-chats-body">
 								<div class="navigation-chats-body__dialog dialog-chats-navigation _active-chats-navigation">
 									<a href="#" class="dialog-chats-navigation__body">
-										<div class="dialog-chats-navigation__avatar"><picture><source srcset="img/ava-message/ava_message1.webp" type="image/webp"><img src="img/ava-message/ava_message1.jpg" alt="ava message"></picture></div>
+										<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message1.jpg" alt="ava message"></div>
 										<div class="dialog-chats-navigation__content">
 											<div class="dialog-chats-navigation__name">Amanda</div>
 											<div class="dialog-chats-navigation__message"> Hello! How are you? Hello! How are you?
@@ -147,7 +150,7 @@
 								</div>
 								<div class="navigation-chats-body__dialog dialog-chats-navigation">
 									<a href="#" class="dialog-chats-navigation__body">
-										<div class="dialog-chats-navigation__avatar"><picture><source srcset="img/ava-message/ava_message2.webp" type="image/webp"><img src="img/ava-message/ava_message2.jpg" alt="ava message"></picture></div>
+										<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message2.jpg" alt="ava message"></div>
 										<div class="dialog-chats-navigation__content">
 											<div class="dialog-chats-navigation__name">Joe</div>
 											<div class="dialog-chats-navigation__message">Hello! How are you?</div>
@@ -157,7 +160,7 @@
 								</div>
 								<div class="navigation-chats-body__dialog dialog-chats-navigation">
 									<a href="#" class="dialog-chats-navigation__body">
-										<div class="dialog-chats-navigation__avatar"><picture><source srcset="img/ava-message/ava_message3.webp" type="image/webp"><img src="img/ava-message/ava_message3.jpg" alt="ava message"></picture></div>
+										<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message3.jpg" alt="ava message"></div>
 										<div class="dialog-chats-navigation__content">
 											<div class="dialog-chats-navigation__name">Thomas</div>
 											<div class="dialog-chats-navigation__message">Hello! How are you?</div>
@@ -167,7 +170,7 @@
 								</div>
 								<div class="navigation-chats-body__dialog dialog-chats-navigation">
 									<a href="#" class="dialog-chats-navigation__body">
-										<div class="dialog-chats-navigation__avatar"><picture><source srcset="img/ava-message/ava_message4.webp" type="image/webp"><img src="img/ava-message/ava_message4.jpg" alt="ava message"></picture></div>
+										<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message4.jpg" alt="ava message"></div>
 										<div class="dialog-chats-navigation__content">
 											<div class="dialog-chats-navigation__name">Aleksandr</div>
 											<div class="dialog-chats-navigation__message">Hello! How are you?</div>
@@ -208,7 +211,7 @@
 				<div class="navigation-chats-body">
 					<div class="navigation-chats-body__dialog dialog-chats-navigation">
 						<a href="#" class="dialog-chats-navigation__body">
-							<div class="dialog-chats-navigation__avatar"><picture><source srcset="img/ava-message/ava_message1.webp" type="image/webp"><img src="img/ava-message/ava_message1.jpg" alt="ava message"></picture></div>
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message1.jpg" alt="ava message"></div>
 							<div class="dialog-chats-navigation__content">
 								<div class="dialog-chats-navigation__name">Amanda</div>
 							</div>
@@ -216,7 +219,7 @@
 					</div>
 					<div class="navigation-chats-body__dialog dialog-chats-navigation">
 						<a href="#" class="dialog-chats-navigation__body">
-							<div class="dialog-chats-navigation__avatar"><picture><source srcset="img/ava-message/ava_message2.webp" type="image/webp"><img src="img/ava-message/ava_message2.jpg" alt="ava message"></picture></div>
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message2.jpg" alt="ava message"></div>
 							<div class="dialog-chats-navigation__content">
 								<div class="dialog-chats-navigation__name">Joe</div>
 							</div>
@@ -224,7 +227,7 @@
 					</div>
 					<div class="navigation-chats-body__dialog dialog-chats-navigation">
 						<a href="#" class="dialog-chats-navigation__body">
-							<div class="dialog-chats-navigation__avatar"><picture><source srcset="img/ava-message/ava_message3.webp" type="image/webp"><img src="img/ava-message/ava_message3.jpg" alt="ava message"></picture></div>
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message3.jpg" alt="ava message"></div>
 							<div class="dialog-chats-navigation__content">
 								<div class="dialog-chats-navigation__name">Thomas</div>
 							</div>
@@ -232,7 +235,7 @@
 					</div>
 					<div class="navigation-chats-body__dialog dialog-chats-navigation">
 						<a href="#" class="dialog-chats-navigation__body">
-							<div class="dialog-chats-navigation__avatar"><picture><source srcset="img/ava-message/ava_message4.webp" type="image/webp"><img src="img/ava-message/ava_message4.jpg" alt="ava message"></picture></div>
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message4.jpg" alt="ava message"></div>
 							<div class="dialog-chats-navigation__content">
 								<div class="dialog-chats-navigation__name">Aleksandr</div>
 							</div>
@@ -285,7 +288,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230116192149"></script>
+	<script src="js/app.min.js?_v=20230124154623"></script>
 </body>
 
 </html>

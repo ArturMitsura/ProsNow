@@ -412,6 +412,30 @@ svg path {
   padding: 0 0.9375rem;
 }
 
+@-webkit-keyframes animate-loading {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(0.8);
+            transform: translate(-50%, -50%) rotate(0deg) scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg) scale(0.8);
+            transform: translate(-50%, -50%) rotate(360deg) scale(0.8);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(0.8);
+            transform: translate(-50%, -50%) rotate(0deg) scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg) scale(0.8);
+            transform: translate(-50%, -50%) rotate(360deg) scale(0.8);
+  }
+}
+
 .button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -420,6 +444,24 @@ svg path {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  /* &._loading-button {
+  	opacity: 0.7;
+  	position: relative;
+  	span {
+  		opacity: 0;
+  	}
+  	&::before {
+  		content: "";
+  		position: absolute;
+  		width: 100%;
+  		height: 100%;
+  		top: 50%;
+  		left: 50%;
+  		transform: scale(0.9);
+  		background: url("../img/Loading.png") center / auto 85% no-repeat;
+  		animation: animate-loading 1s linear infinite;
+  	}
+  } */
 }
 
 .button._fw {
@@ -578,6 +620,30 @@ svg path {
 
 .button_red:active {
   background-color: #1e6ab1;
+}
+
+._loading-button {
+  opacity: 0.7;
+  position: relative;
+}
+
+._loading-button span {
+  opacity: 0;
+}
+
+._loading-button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+  background: url("../img/Loading.png") center/auto 85% no-repeat;
+  -webkit-animation: animate-loading 1s linear infinite;
+          animation: animate-loading 1s linear infinite;
 }
 
 /* .select {
@@ -1975,6 +2041,26 @@ body::after {
   pointer-events: all;
 }
 
+.alerts-body._loading-alerts {
+  overflow: hidden;
+}
+
+.alerts-body._loading-alerts::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 200%;
+  height: 200%;
+  top: 50%;
+  left: 50%;
+  opacity: 0.7;
+  background: #fff url("../img/Loading.png") center/auto 10% no-repeat;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+  -webkit-animation: animate-loading 1s linear infinite;
+          animation: animate-loading 1s linear infinite;
+}
+
 .alerts-body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -2633,16 +2719,37 @@ input[type=number]:focus {
 
 .map-page__container {
   position: relative;
+  z-index: 1;
   top: 7rem;
 }
 
 .map-page__location {
   margin: 0 auto;
   max-width: 90rem;
+  position: relative;
 }
 
 .map-page__location iframe {
   width: 100%;
+}
+
+.map-page__location._loading-map {
+  position: relative;
+  overflow: hidden;
+}
+
+.map-page__location._loading-map::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 300%;
+  height: 300%;
+  top: 50%;
+  left: 50%;
+  opacity: 0.7;
+  background: #fff url("../img/Loading.png") center/auto 4% no-repeat;
+  -webkit-animation: animate-loading 1s linear infinite;
+          animation: animate-loading 1s linear infinite;
 }
 
 .form-main {
@@ -6721,10 +6828,24 @@ input[type=number]:focus {
 .select2-selection,
 .select2-selection__rendered {
   height: 100% !important;
+  min-height: 2.75rem !important;
+}
+
+.select2-container {
+  min-height: 2.8125rem !important;
+}
+
+._select2_multiple .select2-container {
+  height: auto !important;
+}
+
+.select2-selection {
+  border-radius: 0 !important;
 }
 
 ._select2_multiple .select2-selection {
   padding-top: 0.25rem !important;
+  border-radius: 0.4375rem !important;
 }
 
 ._select2_multiple .select2-selection__rendered {
@@ -6734,6 +6855,10 @@ input[type=number]:focus {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+._select2_multiple .p-25 {
+  padding: 0rem !important;
 }
 
 .select2-selection__placeholder {
@@ -6777,7 +6902,7 @@ input[type=number]:focus {
   font-size: 1.5625rem !important;
 }
 
-.form-main__help .select2-selection__clear {
+._select2_multiple .select2-selection__clear {
   display: none !important;
 }
 
@@ -6903,12 +7028,18 @@ input[type=number]:focus {
   background-color: rgba(88, 216, 255, 0.1882352941) !important;
 }
 
+.img-cover {
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+  padding-right: 2px !important;
+}
+
 ._select2_multiple .img-cover {
-  min-width: 1.375rem !important;
+  min-width: 1.75rem !important;
 }
 
 ._select2_multiple .me-1 {
-  margin-right: 1.2rem !important;
+  margin-right: 1.7rem !important;
 }
 
 .select2-results__options,

@@ -6,13 +6,13 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230123215946">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230124154623">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230123215946"></script>
-	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20230123215946" rel="stylesheet" />
-	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20230123215946"></script>
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230124154623"></script>
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20230124154623" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20230124154623"></script>
 </head>
 
 <body>
@@ -98,8 +98,9 @@
 				<div class="map-page__wrapp">
 					<div class="map-page__container">
 						<form action="#" class="map-page__form form-main">
-							<div class="form-main__help _select2_multiple">
-								<select multiple id="services" data-placeholder="I need help with" data-search="Search" class="form-main__select select2-hidden-accessible" name="form[]" data-class-modif="form-main" hidden="" data-id="1" data-speed="150" data-select2-id="services" tabindex="-1" aria-hidden="true">
+							<!-- _select2_multiple -->
+							<div class="form-main__help">
+								<select id="services" data-placeholder="I need help with" data-search="Search" class="form-main__select select2-hidden-accessible" name="form[]" data-class-modif="form-main" hidden="" data-id="1" data-speed="150" data-select2-id="services" tabindex="-1" aria-hidden="true">
 									<option value="" data-select2-id="2">I need help with</option>
 									<optgroup label="Popular Services">
 										<option data-icon="img/icons/Wrench2.svg" value="1">
@@ -138,7 +139,8 @@
 							</div>
 						</form>
 					</div>
-					<div class="map-page__location">
+
+					<div class="map-page__location"><!-- _loading-map -->
 						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1009325.4178588598!2d-118.1507303409819!3d33.67919546953973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sby!4v1673188603078!5m2!1sru!2sby" width="1440" height="756" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 						</iframe>
 					</div>
@@ -330,7 +332,7 @@
 					<br><br>
 					<div class="marker-container">
 						<div class="marker-big marker-big_verification bounce">
-							<div class="marker-big__avatar ">
+							<div class="marker-big__avatar">
 								<img src="img/ava-message/ava_message4.jpg" alt="ava">
 							</div>
 						</div>
@@ -479,7 +481,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230123215946"></script>
+	<script src="js/app.min.js?_v=20230124154623"></script>
 </body>
 
 </html>
