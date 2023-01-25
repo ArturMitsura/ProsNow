@@ -4073,6 +4073,25 @@
                 return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(formRequiredItem.value);
             }
         };
+        function formQuantity() {
+            document.addEventListener("click", (function(e) {
+                let targetElement = e.target;
+                if (targetElement.closest("[data-quantity-plus]") || targetElement.closest("[data-quantity-minus]")) {
+                    const valueElement = targetElement.closest("[data-quantity]").querySelector("[data-quantity-value]");
+                    let value = parseInt(valueElement.value);
+                    if (targetElement.hasAttribute("data-quantity-plus")) {
+                        value++;
+                        if (+valueElement.dataset.quantityMax && +valueElement.dataset.quantityMax < value) value = valueElement.dataset.quantityMax;
+                    } else {
+                        --value;
+                        if (+valueElement.dataset.quantityMin) {
+                            if (+valueElement.dataset.quantityMin > value) value = valueElement.dataset.quantityMin;
+                        } else if (value < 1) value = 1;
+                    }
+                    targetElement.closest("[data-quantity]").querySelector("[data-quantity-value]").value = value;
+                }
+            }));
+        }
         __webpack_require__(2352);
         __webpack_require__(3542);
         var can_use_dom = __webpack_require__(1807);
@@ -5466,6 +5485,7 @@
             viewPass: true,
             autoHeight: false
         });
+        formQuantity();
         pageNavigation();
         headerScroll();
     })();

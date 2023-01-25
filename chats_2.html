@@ -6,13 +6,13 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230124154623">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230125200533">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230124154623"></script>
-	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20230124154623" rel="stylesheet" />
-	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20230124154623"></script>
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230125200533"></script>
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20230125200533" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20230125200533"></script>
 </head>
 
 <body>
@@ -141,7 +141,7 @@
 						</div>
 						<div class="zero-chats__window window-zero-chats">
 							<div class="window-zero-chats__content">
-								<div class="window-zero-chats__start-conversation start-conversation-chats">
+								<div data-popup="#start-conversation" class="window-zero-chats__start-conversation start-conversation-chats">
 									<div class="start-conversation-chats__icon _icon-Dialog1"></div>
 									<div class="start-conversation-chats__text">Start Conversation</div>
 								</div>
@@ -152,7 +152,132 @@
 			</section>
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20230124154623"></script>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+	<div id="start-conversation" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__title">Chats</div>
+				<div class="navigation-chats-body">
+					<div class="navigation-chats-body__dialog dialog-chats-navigation">
+						<a href="#" class="dialog-chats-navigation__body">
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message1.jpg" alt="ava message"></div>
+							<div class="dialog-chats-navigation__content">
+								<div class="dialog-chats-navigation__name">Amanda</div>
+							</div>
+						</a>
+					</div>
+					<div class="navigation-chats-body__dialog dialog-chats-navigation">
+						<a href="#" class="dialog-chats-navigation__body">
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message2.jpg" alt="ava message"></div>
+							<div class="dialog-chats-navigation__content">
+								<div class="dialog-chats-navigation__name">Joe</div>
+							</div>
+						</a>
+					</div>
+					<div class="navigation-chats-body__dialog dialog-chats-navigation">
+						<a href="#" class="dialog-chats-navigation__body">
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message3.jpg" alt="ava message"></div>
+							<div class="dialog-chats-navigation__content">
+								<div class="dialog-chats-navigation__name">Thomas</div>
+							</div>
+						</a>
+					</div>
+					<div class="navigation-chats-body__dialog dialog-chats-navigation">
+						<a href="#" class="dialog-chats-navigation__body">
+							<div class="dialog-chats-navigation__avatar"><img src="img/ava-message/ava_message4.jpg" alt="ava message"></div>
+							<div class="dialog-chats-navigation__content">
+								<div class="dialog-chats-navigation__name">Aleksandr</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ====================================================================== -->
+	<div id="new-project" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup__content_new-project">
+				<div class="popup__title popup__title_big">
+					New project
+				</div>
+				<div class="new-project-popup">
+					<form action="#" class="new-project-popup__form">
+						<div class="new-project-popup__inputs">
+							<div class="new-project-popup__row">
+								<label for="new-project-title" class="new-project-popup__label">Title</label>
+								<input data-validate id="new-project-title" class="new-project-popup__inp" autocomplete="off" type="text" name="form[]" data-error="" placeholder="">
+							</div>
+							<div class="new-project-popup__row">
+								<label for="new-project-services" class="new-project-popup__label">Services</label>
+								<input id="new-project-services" class="new-project-popup__inp" autocomplete="off" type="text" name="form[]" data-error="" placeholder="">
+							</div>
+						</div>
+						<div class="new-project-popup__row">
+							<label for="new-project-description" class="new-project-popup__label">Description</label>
+							<textarea name="form[]" id="new-project-description" class="new-project-popup__textarea"></textarea>
+						</div>
+						<div class="new-project-popup__item new-project-popup__item_long">
+							<input type="file" name="form[]" accept=".jpg, .png, .gif" class="new-project-popup__input">
+							<div class="new-project-popup__file-area">
+								<div class="new-project-popup__file-instruction">
+									<span>Drop photos here or click to upload.</span>
+									<span>Upload new photos</span>
+								</div>
+								<div class="new-project-popup__file-icon _icon-Upload"></div>
+							</div>
+						</div>
+						<div class="new-project-popup__create">
+							<button type="submit" class="new-project-popup__button button button_blue _fw">Create</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ====================================================================== -->
+	<div id="verification-request" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup__content_new-project">
+				<div class="popup__title">
+					Verification request
+				</div>
+				<div class="new-photo-popup">
+					<form action="#" class="new-photo-popup__form">
+						<div class="new-photo-popup__title">Upload your passport photo:</div>
+						<div class="new-photo-popup__load">
+							<div class="new-photo-popup__inputs">
+								<div class="new-photo-popup__file-row">
+									<input autocomplete="off" type="file" accept=".jpg, .png, .jpeg" name="form[]" data-error="" placeholder="" class="new-photo-popup__file" data-placeholder="">
+									<div class="new-photo-popup__file-btn  button_green">Upload</div>
+								</div>
+								<button autocomplete="off" type="reset" name="form[]" data-error="" placeholder="" class="new-photo-popup__reset button button_white-border">Reset
+								</button>
+							</div>
+							<div class="new-photo-popup__type-photo">Allowed file types: png, jpg, jpeg.
+							</div>
+						</div>
+						<div class="new-photo-popup__title">Enter your verification data:</div>
+						<textarea class="new-photo-popup__message" name="message" id="full-chats-message" placeholder=""></textarea>
+						<div class="new-photo-popup__send">
+							<button type="submit" class="new-photo-popup__button button button_blue">Send</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230125200533"></script>
 </body>
 
 </html>

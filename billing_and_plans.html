@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Profile with photo</title>
+	<title>Account settings</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -124,102 +124,101 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="page__profile profile-widthphoto">
-				<div class="profile-widthphoto__container">
-					<div class="profile-widthphoto__body">
-						<div class="profile-widthphoto__panel">
-							<div class="profile-user-card">
-								<div class="profile-user-card__online">online</div>
-								<div class="profile-user-card__avatar"><img src="img/avatar.jpg" alt="avatar"></div>
-								<div class="profile-user-card__name">Roman Loginov</div>
-								<div class="profile-user-card__description">CUSTOMER</div>
-							</div>
-							<form class="profile-widthphoto__form" action="#">
-								<!-- button_green -->
-								<button type="submit" class="profile-widthphoto__call profile-widthphoto__call_mini button button_gray">Request a
-									call</button>
-								<button type="submit" class="profile-widthphoto__report button button_delete">Report</button>
-							</form>
-							<div class="profile-user-overview">
-								<div class="profile-user-overview__title">Overview</div>
-								<div class="profile-user-overview__item">
-									<div class="profile-user-overview__top">Email:</div>
-									<!-- profile-user-overview__email_unblock -->
-									<div class="profile-user-overview__email profile-user-overview__email_unblock">
-										<span>soxatui2210@gmail.com</span>
-									</div>
+			<section class="page__settings-billing billing-settings">
+				<div class="billing-settings__container">
+					<div class="account-settings__navigation settings-navigation">
+						<a href="account_settings.html" class="settings-navigation__link _icon-User2"><span>Account</span></a>
+						<a href="security_settings.html" class="settings-navigation__link _icon-Security"><span>Security</span></a>
+						<a href="projects_settings.html" class="settings-navigation__link _icon-Cube2"><span>Projects</span></a>
+						<a href="billing_and_plans.html" class="settings-navigation__link settings-navigation__link_active _icon-Document"><span>Billing &
+								Plans</span></a>
+					</div>
+					<div class="billing-settings__body">
+						<div class="billing-settings__tariffes">
+							<div class="billing-settings__tariff tariff-card _active-tariff">
+								<div class="tariff-card__price tariff-card__price_left">
+									<sup>$</sup><span>0.99</span><sub>/day</sub>
 								</div>
-								<div class="profile-user-overview__item">
-									<div class="profile-user-overview__top">Joined:</div>
-									<div class="profile-user-overview__date">December 15, 2022</div>
-								</div>
-								<div class="profile-user-overview__item">
-									<div class="profile-user-overview__top">Background Check:</div>
-									<div class="profile-user-overview__verified">Not Verified</div>
-								</div>
-								<div class="profile-user-overview__item">
-									<div class="profile-user-overview__top">Employees:</div>
-									<div class="profile-user-overview__employees"><span>1</span></div>
+								<div class="tariff-card__status">Status Online</div>
+								<ul class="tariff-card__list">
+									<li class="tariff-card__item">Your profile card on the map</li>
+									<li class="tariff-card__item"> Access to customer contacts</li>
+								</ul>
+								<div class="tariff-card__button button button_blue _fw"><span>Upgrade
+										plan</span>
 								</div>
 							</div>
-							<!-- profile-user-request_expectation profile-user-request_approved profile-user-request_failure -->
-							<div class="profile-user-request">
-								<div class="profile-user-request__title">Background Check</div>
-								<div class="profile-user-request__text">
-									<p>
-										Pass verification and increase youramong other
-										specialists, therebyadding customer confidence!
-									</p>
-									<p>
-										A backhround check of background investigation is the process of serching for and
-										compiling thecriminal records, commercial records, and financial records or an individual
-										or organization.
-									</p>
+							<div class="billing-settings__tariff tariff-card">
+								<div class="tariff-card__price tariff-card__price_left">
+									<sup>$</sup><span>25</span><sub>/mounth</sub>
 								</div>
-								<a href="#" data-popup="#verification-request" class="profile-user-request__button button button_blue _fw">Verification request</a>
+								<div class="tariff-card__status">Full Pack</div>
+								<ul class="tariff-card__list">
+									<li class="tariff-card__item">Always online</li>
+									<li class="tariff-card__item">Unlimited media download</li>
+									<li class="tariff-card__item">Unlimited access to customer contacts</li>
+									<li class="tariff-card__item">Background Check</li>
+								</ul>
 							</div>
 						</div>
-						<div class="profile-widthphoto__projects">
-							<div class="profile-user-projects">
-								<div class="profile-user-projects__title">Featured Projects</div>
-								<div class="profile-user-projects__wrapp">
-									<div class="profile-user-projects__project profile-user-project">
-										<div class="profile-user-project__body">
-											<a href="page-404.html" class="profile-user-project__image-ibg"><img src="img/people/professional2_mobile.jpg" alt="professional"></a>
-											<div class="profile-user-project__content">
-												<div class="profile-user-project__title">Project 1</div>
-												<div class="profile-user-project__text">Lorem ipsum dolor sit amet, consectetur
-													adipiscing elit. Suspendisse varius enim in eros elementum tristique. </div>
-											</div>
-										</div>
-									</div>
-									<div class="profile-user-projects__project profile-user-project">
-										<div class="profile-user-project__body">
-											<a href="page-404.html" class="profile-user-project__image-ibg"><img src="img/people/male-plumber.jpg" alt="male-plumber"></a>
-											<div class="profile-user-project__content">
-												<div class="profile-user-project__title">Project 2</div>
-												<div class="profile-user-project__text">Lorem ipsum dolor sit amet, consectetur
-													adipiscing elit. Suspendisse varius enim in eros elementum tristique. </div>
-											</div>
-										</div>
-									</div>
-									<div class="profile-user-projects__project profile-user-project">
-										<div class="profile-user-project__body">
-											<a href="page-404.html" class="profile-user-project__image-ibg"><img src="img/people/man_mobile.jpg" alt="man">
-											</a>
-											<div class="profile-user-project__content">
-												<div class="profile-user-project__title">Project 2</div>
-												<div class="profile-user-project__text">Lorem ipsum dolor sit amet, consectetur
-													adipiscing elit. Suspendisse varius enim in eros elementum tristique. </div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="profile-user-projects__yet">
-									<button type="button" class="profile-user-projects__btn"></button>
+						<form action="#" class="billing-settings__form form-projects-settings">
+							<div class="form-projects-settings__search form-projects-settings__search_2">
+								<div class="form-projects-settings__show form-projects-settings__show_2">Show
+									entries<span>10</span></div>
+								<div class="form-projects-settings__top">
+									<button type="submit" class="form-projects-settings__button _icon-Search"></button>
+									<input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Search" class="form-projects-settings__input" data-placeholder="Search">
 								</div>
 							</div>
-						</div>
+							<div class="table-billing-plans__table table-billing-plans">
+								<div class="table-billing-plans__body">
+									<table class="table-billing-plans__table">
+										<tr class="table-billing-plans__title">
+											<th>№</th>
+											<th>PLAN</th>
+											<th>Payment SERVICE</th>
+											<th>Status</th>
+											<th>Amount </th>
+											<th>Payment date</th>
+										</tr>
+										<tr class="table-billing-plans__row">
+											<td class="table-billing-plans__number">1</td>
+											<td class="table-billing-plans__plan">Status online</td>
+											<td class="table-billing-plans__pay">PayPal</td>
+											<td class="table-billing-plans__status">Comleted</td>
+											<td class="table-billing-plans__price"><span>0.99</span>$</td>
+											<td class="table-billing-plans__date">17.01.2023</td>
+										</tr>
+										<tr class="table-billing-plans__row">
+											<td class="table-billing-plans__number">2</td>
+											<td class="table-billing-plans__plan">Status online</td>
+											<td class="table-billing-plans__pay">PayPal</td>
+											<td class="table-billing-plans__status table-billing-plans__status_pending">Pending
+											</td>
+											<td class="table-billing-plans__price"><span>0.99</span>$</td>
+											<td class="table-billing-plans__date">17.01.2023</td>
+										</tr>
+										<tr class="table-billing-plans__row">
+											<td class="table-billing-plans__number">3</td>
+											<td class="table-billing-plans__plan">Status online</td>
+											<td class="table-billing-plans__pay">PayPal</td>
+											<td class="table-billing-plans__status table-billing-plans__status_cancel">Canceled
+											</td>
+											<td class="table-billing-plans__price"><span>0.99</span>$</td>
+											<td class="table-billing-plans__date">17.01.2023</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="table-billing-plans__nav nav-projects-settings nav-projects-settings_plans">
+
+								<div class="nav-projects-settings__buttons">
+									<button class="nav-projects-settings__prev">PREVIOUS</button>
+									<span class="nav-projects-settings__page">1</span>
+									<button class="nav-projects-settings__next">NEXT</button>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 				<button type="button" class="profile-widthoutphoto__dialog dialog-message">
@@ -235,7 +234,7 @@
 								<div class="navigation-full-chats__avatar-user avatar-user-chats"><img src="img/avatar.jpg" alt="avatar"></div>
 								<form action="#" class="navigation-full-chats__form navigation-chats-form">
 									<button type="submit" class="navigation-chats-form__button _icon-Search"></button>
-									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Search dialog..." class="navigation-chats-form__search">
+									<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="Search dialog..." class="navigation-chats-form__search">
 								</form>
 							</div>
 							<div class="navigation-full-chats__body navigation-chats-body">
@@ -293,7 +292,6 @@
 						</div>
 					</div>
 				</div>
-
 			</section>
 		</main>
 	</div>

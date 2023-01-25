@@ -6,13 +6,13 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230124154623">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230125200533">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230124154623"></script>
-	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20230124154623" rel="stylesheet" />
-	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20230124154623"></script>
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230125200533"></script>
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20230125200533" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20230125200533"></script>
 </head>
 
 <body>
@@ -130,6 +130,8 @@
 						<a href="account_settings.html" class="settings-navigation__link _icon-User2"><span>Account</span></a>
 						<a href="security_settings.html" class="settings-navigation__link _icon-Security"><span>Security</span></a>
 						<a href="projects_settings.html" class="settings-navigation__link settings-navigation__link_active _icon-Cube2"><span>Projects</span></a>
+						<a href="billing_and_plans.html" class="settings-navigation__link _icon-Document"><span>Billing &
+								Plans</span></a>
 					</div>
 					<div class="projects-settings__body">
 						<div class="projects-settings__title title__settings">Projects</div>
@@ -369,9 +371,7 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- ====================================================================== -->
-
 	<div id="new-project" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content popup__content_new-project">
@@ -412,7 +412,39 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230124154623"></script>
+	<!-- ====================================================================== -->
+	<div id="verification-request" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup__content_new-project">
+				<div class="popup__title">
+					Verification request
+				</div>
+				<div class="new-photo-popup">
+					<form action="#" class="new-photo-popup__form">
+						<div class="new-photo-popup__title">Upload your passport photo:</div>
+						<div class="new-photo-popup__load">
+							<div class="new-photo-popup__inputs">
+								<div class="new-photo-popup__file-row">
+									<input autocomplete="off" type="file" accept=".jpg, .png, .jpeg" name="form[]" data-error="" placeholder="" class="new-photo-popup__file" data-placeholder="">
+									<div class="new-photo-popup__file-btn  button_green">Upload</div>
+								</div>
+								<button autocomplete="off" type="reset" name="form[]" data-error="" placeholder="" class="new-photo-popup__reset button button_white-border">Reset
+								</button>
+							</div>
+							<div class="new-photo-popup__type-photo">Allowed file types: png, jpg, jpeg.
+							</div>
+						</div>
+						<div class="new-photo-popup__title">Enter your verification data:</div>
+						<textarea class="new-photo-popup__message" name="message" id="full-chats-message" placeholder=""></textarea>
+						<div class="new-photo-popup__send">
+							<button type="submit" class="new-photo-popup__button button button_blue">Send</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230125200533"></script>
 </body>
 
 </html>
