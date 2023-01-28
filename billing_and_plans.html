@@ -6,13 +6,13 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230128133249">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230128213404">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230128133249"></script>
-	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20230128133249" rel="stylesheet" />
-	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20230128133249"></script>
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230128213404"></script>
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20230128213404" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20230128213404"></script>
 </head>
 
 <body>
@@ -135,7 +135,7 @@
 					</div>
 					<div class="billing-settings__body">
 						<div class="billing-settings__tariffes">
-							<div class="billing-settings__tariff tariff-card _active-tariff">
+							<div class="billing-settings__tariff tariff-card _expired-tariff">
 								<div class="tariff-card__price tariff-card__price_left">
 									<sup>$</sup><span>0.99</span><sub>/day</sub>
 								</div>
@@ -144,11 +144,26 @@
 									<li class="tariff-card__item">Your profile card on the map</li>
 									<li class="tariff-card__item"> Access to customer contacts</li>
 								</ul>
+								<div class="tariff-card__info">
+									<div class="tariff-card__info-top">
+										<div class="tariff-card__time">Day</div>
+										<div class="tariff-card__time-of"><span>23</span> of <span>24</span> Hours</div>
+									</div>
+									<div class="tariff-card__scale">
+										<div class="tariff-card__scale-all">
+											<div style="width: 50%;" class="tariff-card__scale-active"></div>
+										</div>
+
+									</div>
+									<div class="tariff-card__remaining"><span>23</span>
+										<p>hours remaining</p>
+									</div>
+								</div>
 								<div class="tariff-card__button button button_blue _fw"><span>Upgrade
 										plan</span>
 								</div>
 							</div>
-							<div class="billing-settings__tariff tariff-card">
+							<div class="billing-settings__tariff tariff-card _active-tariff">
 								<div class="tariff-card__price tariff-card__price_left">
 									<sup>$</sup><span>25</span><sub>/mounth</sub>
 								</div>
@@ -420,7 +435,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230128133249"></script>
+	<script src="js/app.min.js?_v=20230128213404"></script>
 </body>
 
 </html>

@@ -3,23 +3,15 @@
 @font-face {
   font-family: FuturaPT;
   font-display: swap;
-  src: url("../fonts/FuturaPT-Book.woff2") format("woff2"), url("../fonts/FuturaPT-Book.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: FuturaPT;
-  font-display: swap;
   src: url("../fonts/FuturaPT-Bold.woff2") format("woff2"), url("../fonts/FuturaPT-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: icons;
+  font-family: FuturaPT;
   font-display: swap;
-  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  src: url("../fonts/FuturaPT-Book.woff2") format("woff2"), url("../fonts/FuturaPT-Book.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -29,6 +21,14 @@
   font-display: swap;
   src: url("../fonts/FuturaPT-Demi.woff2") format("woff2"), url("../fonts/FuturaPT-Demi.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: FuturaPT;
+  font-display: swap;
+  src: url("../fonts/FuturaPT-Heavy.woff2") format("woff2"), url("../fonts/FuturaPT-Heavy.woff") format("woff");
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -49,18 +49,18 @@
 }
 
 @font-face {
-  font-family: Tisa Sans Pro;
+  font-family: icons;
   font-display: swap;
-  src: url("../fonts/Tisa Sans Pro-Light.woff2") format("woff2"), url("../fonts/Tisa Sans Pro-Light.woff") format("woff");
-  font-weight: 300;
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: FuturaPT;
+  font-family: Tisa Sans Pro;
   font-display: swap;
-  src: url("../fonts/FuturaPT-Heavy.woff2") format("woff2"), url("../fonts/FuturaPT-Heavy.woff") format("woff");
-  font-weight: 800;
+  src: url("../fonts/Tisa Sans Pro-Light.woff2") format("woff2"), url("../fonts/Tisa Sans Pro-Light.woff") format("woff");
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -84,6 +84,8 @@
 .personal-information__back-link::before,
 .create-account__back-link::before,
 .block-404__back-link::before,
+.billing-plans__back-link::before,
+.for-error-billing__item::before,
 .button_delete::before,
 [class*=_icon-]:before {
   font-family: "icons";
@@ -294,6 +296,10 @@
 
 ._icon-Document:before {
   content: "\e929";
+}
+
+._icon-error:before {
+  content: "\e92a";
 }
 
 * {
@@ -1418,10 +1424,6 @@ body::after {
   padding: 2.875rem 0;
 }
 
-.page__billing-plans {
-  padding: 3.8125rem 0 4.8125rem 0;
-}
-
 .page__chats-zero {
   padding: 1.6875rem 0 1.875rem 0;
 }
@@ -2243,6 +2245,122 @@ body::after {
 .new-photo-popup__button {
   margin-top: 1.25rem;
   min-width: 14.375rem;
+}
+
+.for-error-billing__list {
+  padding: 1.5625rem 0rem;
+}
+
+.for-error-billing__item {
+  padding-left: 3.125rem;
+  width: 100%;
+  min-height: 3.125rem;
+  background-color: rgba(241, 144, 146, 0.6352941176);
+  color: #8d4041;
+  font-size: 1.0625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.9375rem 0;
+  border-radius: 0.3125rem;
+}
+
+.for-error-billing__item::before {
+  content: "\e92a";
+  padding-right: 0.5rem;
+}
+
+.successfully-billing-pay__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 0.625rem;
+     -moz-column-gap: 0.625rem;
+          column-gap: 0.625rem;
+}
+
+.successfully-billing-pay__image-ibg {
+  padding-top: 66%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+}
+
+.successfully-billing-pay__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.successfully-billing-pay__congratulation {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 12.5rem;
+}
+
+.successfully-billing-pay__congratulation::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("../img/congratulation.png") center/contain no-repeat;
+  opacity: 0.35;
+}
+
+.successfully-billing-pay__title {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 1.5625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 500;
+  text-align: center;
+  z-index: 1;
+  color: #1e6ab1;
+}
+
+.successfully-billing-pay__text {
+  width: 100%;
+  height: 100%;
+  width: 80%;
+  text-align: center;
+  font-weight: 500;
+  z-index: 1;
+  color: #1e6ab1;
+  /* flex: 1 1 auto; */
 }
 
 .header {
@@ -3564,13 +3682,39 @@ input[type=number]:focus {
   }
 }
 
+.billing-plans__back {
+  font-family: "FuturaPT";
+  font-weight: 700;
+  font-size: 1.4375rem;
+  line-height: 1.2608695652;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #58d7ff;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.billing-plans__back-link {
+  display: block;
+  padding: 1.5rem 0.9375rem;
+}
+
+.billing-plans__back-link::before {
+  content: "\e911";
+  font-size: 1.1875rem;
+  padding-right: 0.3125rem;
+}
+
 .billing-plans__title {
   font-family: "FuturaPT";
   font-size: 3rem;
   line-height: 1.2916666667;
   font-weight: 450;
   text-align: center;
-  padding-top: 2.125rem;
+  padding-top: 1.25rem;
 }
 
 .billing-plans__choose {
@@ -3605,52 +3749,57 @@ input[type=number]:focus {
 
 .billing-plans__payment-method {
   width: 45%;
-  background: #3c4043;
-  border-radius: 2.1875rem;
-  color: #fff;
+  /* background: #3c4043;
+  border-radius: rem(35); */
+  /*  color: #fff; */
   min-height: 2.6875rem;
 }
 
 .billing-plans__payment-method2 {
   width: 45%;
-  background: #2c2e2f;
-  border-radius: 0.4375rem;
+  min-height: 2.6875rem;
+  /* background: #2c2e2f;
+  border-radius: rem(7); */
 }
 
 .billing-plans__payment-link {
-  font-family: "FuturaPT";
-  display: -webkit-box;
-  display: -ms-flexbox;
+  /*  font-family: "FuturaPT";
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 100%;
-  font-size: 1.375rem;
+  font-size: rem(22);
+  p {
+     @include adaptiveValue("font-size", 22, 14);
+  } */
 }
 
 .billing-plans__img-pay {
-  padding: 0.6875rem 0.625rem 0.5625rem 0;
-  border-right: 0.0625rem solid #5f6368;
+  /*  padding: rem(11) rem(10) rem(9) 0;
+  border-right: rem(1) solid #5f6368;
   max-height: 100%;
+  @media (max-width: $mobile) {
+     padding: rem(9) rem(6) rem(8) 0;
+  } */
 }
 
 .billing-plans__img-card {
-  padding: 0 0.4375rem 0 0.5625rem;
-  max-height: 100%;
+  /*  padding: 0 rem(7) 0 rem(9);
+  max-height: 100%; */
 }
 
 .billing-plans__img-dots {
-  padding-right: 0.1875rem;
-  max-height: 100%;
+  /*   padding-right: rem(3);
+  max-height: 100%; */
 }
 
 .billing-plans__img-paypal {
-  padding: 0.8125rem 0 0.4375rem 0;
-  max-height: 100%;
+  /*    padding: rem(13) 0 rem(7) 0;
+  max-height: 100%; */
+}
+
+.gpay-card-info-container {
+  width: 100% !important;
 }
 
 .tariff-card {
@@ -3663,6 +3812,11 @@ input[type=number]:focus {
 
 .tariff-card._active-tariff {
   border: 0.125rem solid #58d7ff;
+}
+
+.tariff-card._expired-tariff {
+  -webkit-box-shadow: 0px 0px 35px #f19091;
+          box-shadow: 0px 0px 35px #f19091;
 }
 
 .tariff-card__price {
@@ -3680,6 +3834,10 @@ input[type=number]:focus {
   font-size: 4.9375rem;
   line-height: 1;
   color: #58d7ff;
+}
+
+._expired-tariff .tariff-card__price span {
+  color: #f19091;
 }
 
 .tariff-card__price sup,
@@ -3707,6 +3865,11 @@ input[type=number]:focus {
   line-height: 1.5;
 }
 
+._expired-tariff .tariff-card__status {
+  color: #f19091;
+  background: rgba(241, 144, 146, 0.2196078431);
+}
+
 .tariff-card__list {
   margin-top: 1.0625rem;
 }
@@ -3727,6 +3890,70 @@ input[type=number]:focus {
   left: 0;
   border-radius: 50%;
   background-color: #313131;
+}
+
+.tariff-card__info {
+  font-family: "FuturaPT";
+  font-weight: 450;
+  padding-top: 0.75rem;
+}
+
+.tariff-card__info-top {
+  font-size: 1.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.3125rem 0;
+  opacity: 0.8;
+}
+
+.tariff-card__scale {
+  padding: 0.4375rem 0;
+}
+
+.tariff-card__scale-all {
+  height: 0.5rem;
+  width: 100%;
+  background-color: rgba(88, 216, 255, 0.2078431373);
+  border-radius: 0.25rem;
+}
+
+._expired-tariff .tariff-card__scale-all {
+  background: rgba(241, 144, 146, 0.2392156863);
+}
+
+.tariff-card__scale-active {
+  height: 0.5rem;
+  background-color: #58d7ff;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0px 0px 8px rgb(88, 215, 255);
+          box-shadow: 0px 0px 8px rgb(88, 215, 255);
+  overflow: visible;
+}
+
+._expired-tariff .tariff-card__scale-active {
+  background: #f19092;
+  -webkit-box-shadow: 0px 0px 8px #f19092;
+          box-shadow: 0px 0px 8px #f19092;
+}
+
+.tariff-card__remaining {
+  font-size: 1.125rem;
+  padding: 0.3125rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 0.3125rem;
+     -moz-column-gap: 0.3125rem;
+          column-gap: 0.3125rem;
+  opacity: 0.8;
+}
+
+._expired-tariff .tariff-card__button {
+  background: #f19092;
 }
 
 .billing-settings__body {
@@ -8431,16 +8658,20 @@ input[type=number]:focus {
     font-size: 2.5rem;
   }
 
-  .page__billing-plans {
-    padding-top: 3.8125rem;
-  }
-
   .profile-user-project__title {
     font-size: 1.5rem;
   }
 
   .profile-user-project__text {
     font-size: 1rem;
+  }
+
+  .successfully-billing-pay__title {
+    font-size: 2.625rem;
+  }
+
+  .successfully-billing-pay__text {
+    font-size: 1.25rem;
   }
 
   .header._header-scroll + main {
@@ -8643,6 +8874,10 @@ input[type=number]:focus {
     min-width: 26.125rem;
   }
 
+  .billing-plans__back {
+    font-size: 1.4375rem;
+  }
+
   .billing-plans__title {
     font-size: 3rem;
   }
@@ -8683,10 +8918,6 @@ input[type=number]:focus {
 
   .billing-plans__payment-method2 {
     max-height: 4.25rem;
-  }
-
-  .billing-plans__payment-link p {
-    font-size: 1.375rem;
   }
 
   .tariff-card__price span {
@@ -9428,8 +9659,16 @@ input[type=number]:focus {
             box-shadow: -34px 15px 0 0 rgba(88, 216, 255, 0.1294117647);
   }
 
+  .billing-plans__back-link {
+    padding: 0.9375rem;
+  }
+
+  .billing-plans__back-link::before {
+    font-size: 1rem;
+  }
+
   .billing-plans__title {
-    padding-top: 1.8125rem;
+    padding-top: 0.625rem;
   }
 
   .billing-plans__payment-methods {
@@ -9443,10 +9682,6 @@ input[type=number]:focus {
 
   .billing-plans__payment-method2 {
     width: 90%;
-  }
-
-  .billing-plans__img-pay {
-    padding: 0.5625rem 0.375rem 0.5rem 0;
   }
 
   .billing-settings__body {
@@ -10230,6 +10465,10 @@ input[type=number]:focus {
     width: 100%;
   }
 
+  .successfully-billing-pay__image-ibg {
+    display: none;
+  }
+
   .main-image__location_1 {
     top: 23.5131396957%;
     left: 4.2735042735%;
@@ -10409,16 +10648,20 @@ input[type=number]:focus {
     font-size: 1.5625rem;
   }
 
-  .page__billing-plans {
-    padding-top: 0.0625rem;
-  }
-
   .profile-user-project__title {
     font-size: 1.25rem;
   }
 
   .profile-user-project__text {
     font-size: 0.8125rem;
+  }
+
+  .successfully-billing-pay__title {
+    font-size: 1.5rem;
+  }
+
+  .successfully-billing-pay__text {
+    font-size: 0.75rem;
   }
 
   .header._header-scroll + main {
@@ -10629,6 +10872,10 @@ input[type=number]:focus {
     min-width: 16rem;
   }
 
+  .billing-plans__back {
+    font-size: 1.1875rem;
+  }
+
   .billing-plans__title {
     font-size: 1.75rem;
   }
@@ -10669,10 +10916,6 @@ input[type=number]:focus {
 
   .billing-plans__payment-method2 {
     max-height: 2.6875rem;
-  }
-
-  .billing-plans__payment-link p {
-    font-size: 0.875rem;
   }
 
   .tariff-card__price span {
@@ -11044,18 +11287,6 @@ input[type=number]:focus {
     }
 }
 
-@supports (padding-top: clamp( 0.0625rem , -1.7063679245rem  +  7.5471698113vw , 3.8125rem )) {
-    .page__billing-plans {
-      padding-top: clamp( 0.0625rem , -1.7063679245rem  +  7.5471698113vw , 3.8125rem );
-    }
-}
-
-@supports not (padding-top: clamp( 0.0625rem , -1.7063679245rem  +  7.5471698113vw , 3.8125rem )) {
-    .page__billing-plans {
-      padding-top: calc(0.0625rem + 3.75 * (100vw - 23.4375rem) / 49.6875);
-    }
-}
-
 @supports (font-size: clamp( 1.25rem , 1.1320754717rem  +  0.5031446541vw , 1.5rem )) {
     .profile-user-project__title {
       font-size: clamp( 1.25rem , 1.1320754717rem  +  0.5031446541vw , 1.5rem );
@@ -11077,6 +11308,30 @@ input[type=number]:focus {
 @supports not (font-size: clamp( 0.8125rem , 0.7240566038rem  +  0.3773584906vw , 1rem )) {
     .profile-user-project__text {
       font-size: calc(0.8125rem + 0.1875 * (100vw - 23.4375rem) / 49.6875);
+    }
+}
+
+@supports (font-size: clamp( 1.5rem , 0.9693396226rem  +  2.2641509434vw , 2.625rem )) {
+    .successfully-billing-pay__title {
+      font-size: clamp( 1.5rem , 0.9693396226rem  +  2.2641509434vw , 2.625rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.5rem , 0.9693396226rem  +  2.2641509434vw , 2.625rem )) {
+    .successfully-billing-pay__title {
+      font-size: calc(1.5rem + 1.125 * (100vw - 23.4375rem) / 49.6875);
+    }
+}
+
+@supports (font-size: clamp( 0.75rem , 0.5141509434rem  +  1.0062893082vw , 1.25rem )) {
+    .successfully-billing-pay__text {
+      font-size: clamp( 0.75rem , 0.5141509434rem  +  1.0062893082vw , 1.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.5141509434rem  +  1.0062893082vw , 1.25rem )) {
+    .successfully-billing-pay__text {
+      font-size: calc(0.75rem + 0.5 * (100vw - 23.4375rem) / 49.6875);
     }
 }
 
@@ -11656,6 +11911,18 @@ input[type=number]:focus {
     }
 }
 
+@supports (font-size: clamp( 1.1875rem , 1.0695754717rem  +  0.5031446541vw , 1.4375rem )) {
+    .billing-plans__back {
+      font-size: clamp( 1.1875rem , 1.0695754717rem  +  0.5031446541vw , 1.4375rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.1875rem , 1.0695754717rem  +  0.5031446541vw , 1.4375rem )) {
+    .billing-plans__back {
+      font-size: calc(1.1875rem + 0.25 * (100vw - 23.4375rem) / 49.6875);
+    }
+}
+
 @supports (font-size: clamp( 1.75rem , 1.1603773585rem  +  2.5157232704vw , 3rem )) {
     .billing-plans__title {
       font-size: clamp( 1.75rem , 1.1603773585rem  +  2.5157232704vw , 3rem );
@@ -11777,18 +12044,6 @@ input[type=number]:focus {
 @supports not (max-height: clamp( 2.6875rem , 1.9504716981rem  +  3.1446540881vw , 4.25rem )) {
     .billing-plans__payment-method2 {
       max-height: calc(2.6875rem + 1.5625 * (100vw - 23.4375rem) / 49.6875);
-    }
-}
-
-@supports (font-size: clamp( 0.875rem , 0.6391509434rem  +  1.0062893082vw , 1.375rem )) {
-    .billing-plans__payment-link p {
-      font-size: clamp( 0.875rem , 0.6391509434rem  +  1.0062893082vw , 1.375rem );
-    }
-}
-
-@supports not (font-size: clamp( 0.875rem , 0.6391509434rem  +  1.0062893082vw , 1.375rem )) {
-    .billing-plans__payment-link p {
-      font-size: calc(0.875rem + 0.5 * (100vw - 23.4375rem) / 49.6875);
     }
 }
 

@@ -6,13 +6,13 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230128133249">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230128213404">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230128133249"></script>
-	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20230128133249" rel="stylesheet" />
-	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20230128133249"></script>
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230128213404"></script>
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20230128213404" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20230128213404"></script>
 </head>
 
 <body>
@@ -20,6 +20,52 @@
 		<main class="page">
 			<section class="page__billing-plans billing-plans">
 				<div class="billing-plans__container">
+					<div class="billing-plans__back">
+						<a class="billing-plans__back-link" href="">Back</a>
+					</div>
+					<div class="billing-plans__successfully successfully-billing-pay">
+						<div class="successfully-billing-pay__body">
+							<div class="successfully-billing-pay__image-ibg"><img src="img/people/plumbe3.png" alt="plumbe">
+							</div>
+							<div class="successfully-billing-pay__content">
+								<div class="successfully-billing-pay__congratulation">
+									<div class="successfully-billing-pay__title">
+										<div>Congratulations <span>Ihor</span>,</div>
+									</div>
+									<div class="successfully-billing-pay__text">Lorem, ipsum dolor sit amet consectetur
+										adipisicing elit. Ducimus porro asperiores sapiente voluptatem odio et.
+									</div>
+								</div>
+								<div class="successfully-billing-pay__tariff">
+									<div class="successfully-billing-pay__tariff tariff-card">
+										<div class="tariff-card__price tariff-card__price_left">
+											<sup>$</sup><span>0.99</span><sub>/day</sub>
+										</div>
+										<div class="tariff-card__status">Status Online</div>
+										<ul class="tariff-card__list">
+											<li class="tariff-card__item">Your profile card on the map</li>
+											<li class="tariff-card__item"> Access to customer contacts</li>
+										</ul>
+										<div class="tariff-card__info">
+											<div class="tariff-card__info-top">
+												<div class="tariff-card__time">Day</div>
+												<div class="tariff-card__time-of"><span>23</span> of <span>24</span> Hours</div>
+											</div>
+											<div class="tariff-card__scale">
+												<div class="tariff-card__scale-all">
+													<div style="width: 50%;" class="tariff-card__scale-active"></div>
+												</div>
+
+											</div>
+											<div class="tariff-card__remaining"><span>23</span>
+												<p>hours remaining</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="billing-plans__title">Billing Plans</div>
 					<div class="billing-plans__choose">Choose the service you need, pay and enjoy using it.</div>
 					<div class="billing-plans__tariffes">
@@ -42,27 +88,33 @@
 							</ul>
 						</div>
 					</div>
+					<div class="billing-plans__for-error for-error-billing">
+						<ul class="for-error-billing__list">
+							<li class="for-error-billing__item">Error</li>
+							<li class="for-error-billing__item"> Error 2</li>
+						</ul>
+					</div>
 					<div class="billing-plans__title">Payment Methods</div>
 					<div class="billing-plans__payment-methods">
-						<div class="billing-plans__payment-method">
-							<a class="billing-plans__payment-link" href="#">
-								<img class="billing-plans__img-pay" src="img/Pay/G-pay.png" alt="googlepay">
-								<img class="billing-plans__img-card" src="img/Pay/Master-card.png" alt="master card">
-								<img class="billing-plans__img-dots" src="img/Pay/ellipse.svg" alt="0">
-								<img class="billing-plans__img-dots" src="img/Pay/ellipse.svg" alt="0">
-								<img class="billing-plans__img-dots" src="img/Pay/ellipse.svg" alt="0">
-								<img class="billing-plans__img-dots" src="img/Pay/ellipse.svg" alt="0">
-								<p>1234</p>
-							</a>
-						</div>
-						<div class="billing-plans__payment-method2"><a class="billing-plans__payment-link" href="#">
-								<img class="billing-plans__img-paypal" src="img/Pay/PayPal.png" alt="PayPal"></a></div>
+						<button type="button" class="billing-plans__payment-method">
+							<!-- <a class="billing-plans__payment-link" href="#">
+                        <img class="billing-plans__img-pay" src="img/Pay/G-pay.png" alt="googlepay">
+                        <img class="billing-plans__img-card" src="img/Pay/Master-card.png" alt="master card">
+                        <img class="billing-plans__img-dots" src="img/Pay/ellipse.svg" alt="0">
+                        <img class="billing-plans__img-dots" src="img/Pay/ellipse.svg" alt="0">
+                        <img class="billing-plans__img-dots" src="img/Pay/ellipse.svg" alt="0">
+                        <img class="billing-plans__img-dots" src="img/Pay/ellipse.svg" alt="0">
+                        <p>1234</p>
+                     </a> -->
+						</button>
+						<button class="billing-plans__payment-method2"><a class="billing-plans__payment-link" href="#">
+								<!--  <img class="billing-plans__img-paypal" src="img/Pay/PayPal.png" alt="PayPal"> --></a></button>
 					</div>
 				</div>
 			</section>
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20230128133249"></script>
+	<script src="js/app.min.js?_v=20230128213404"></script>
 </body>
 
 </html>
