@@ -6,13 +6,13 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230125200533">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230128133249">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230125200533"></script>
-	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20230125200533" rel="stylesheet" />
-	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20230125200533"></script>
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230128133249"></script>
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20230128133249" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20230128133249"></script>
 </head>
 
 <body>
@@ -206,41 +206,38 @@
 										<textarea class="correction-account-settings__txtarea" placeholder="" name="introduction" id="introduction-label"></textarea>
 									</div>
 								</div>
+							</form>
 						</div>
-						</form>
-					</div>
-					<div class="account-settings__delete delete-account-settings">
-						<div class="delete-account-settings__title title__settings">Delete Account</div>
-						<form action="#" class="delete-account-settings__form">
-							<div class="delete-account-settings__question">Are you sure you want to delete your account?
-							</div>
-							<div class="delete-account-settings__question delete-account-settings__question_second">Once you
-								delete your account, there is no going back. Please be certain.</div>
-							<input class="delete-account-settings__input" id="delete-account-confirm" type="checkbox" name="form[]" class="input">
-							<label class="delete-account-settings__label" for="delete-account-confirm">I confirm my account
-								deactivation</label>
-							<button type="submit" class="delete-account-settings__button button button_red">Deactivate
-								Account</button>
-						</form>
-					</div>
-					<div class="account-settings__projects projects-account-settings">
-						<div class="projects-account-settings__title title__settings">Featured Projects</div>
-						<form action="#" class="projects-account-settings__form">
-							<div class="projects-account-settings__inputs">
-								<div class="projects-account-settings__file-row">
-									<input autocomplete="off" type="file" accept=".jpg, .png, .jpeg" name="form[]" data-error="" placeholder="" class="projects-account-settings__file">
-									<div class="projects-account-settings__file-btn  button_blue">Upload new photos</div>
+						<div class="account-settings__delete delete-account-settings">
+							<div class="delete-account-settings__title title__settings">Delete Account</div>
+							<form action="#" class="delete-account-settings__form">
+								<div class="delete-account-settings__question">Are you sure you want to delete your account?
 								</div>
-								<button type="submit" name="form[]" class="projects-account-settings__select _icon-sellect-all button button_lightblue">Select
-									All
-								</button>
+								<div class="delete-account-settings__question delete-account-settings__question_second">Once you
+									delete your account, there is no going back. Please be certain.</div>
+								<input class="delete-account-settings__input" id="delete-account-confirm" type="checkbox" name="form[]" class="input">
+								<label class="delete-account-settings__label" for="delete-account-confirm">I confirm my account
+									deactivation</label>
+								<button type="submit" class="delete-account-settings__button button button_red">Deactivate
+									Account</button>
+							</form>
+						</div>
+						<!-- profile-user-request_expectation profile-user-request_approved profile-user-request_failure -->
+						<div class="profile-user-request">
+							<div class="profile-user-request__title">Background Check</div>
+							<div class="profile-user-request__text">
+								<p>
+									Pass verification and increase youramong other
+									specialists, therebyadding customer confidence!
+								</p>
+								<p>
+									A backhround check of background investigation is the process of serching for and
+									compiling thecriminal records, commercial records, and financial records or an individual
+									or organization.
+								</p>
 							</div>
-							<div class="projects-account-settings__images">
-								<a href="#" class="projects-account-settings__image"><img src="img/people/male-plumber.jpg" alt="cleaner"></a>
-								<a href="#" class="projects-account-settings__image"><img src="img/people/professional2_mobile.jpg" alt="professional"></a>
-								<a href="#" class="projects-account-settings__image"><img src="img/people/man_mobile.jpg" alt="man with dog"></a>
-							</div>
-						</form>
+							<a href="#" data-popup="#verification-request" class="profile-user-request__button button button_blue _fw">Verification request</a>
+						</div>
 					</div>
 				</div>
 	</div>
@@ -443,7 +440,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230125200533"></script>
+	<script src="js/app.min.js?_v=20230128133249"></script>
 </body>
 
 </html>

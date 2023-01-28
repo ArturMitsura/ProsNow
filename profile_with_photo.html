@@ -6,13 +6,13 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230125200533">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230128133249">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230125200533"></script>
-	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20230125200533" rel="stylesheet" />
-	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20230125200533"></script>
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230128133249"></script>
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20230128133249" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20230128133249"></script>
 </head>
 
 <body>
@@ -129,10 +129,14 @@
 					<div class="profile-widthphoto__body">
 						<div class="profile-widthphoto__panel">
 							<div class="profile-user-card">
-								<div class="profile-user-card__online">online</div>
+								<div class="profile-user-card__online _online-user"><span>online</span><span>offline</span>
+								</div>
 								<div class="profile-user-card__avatar"><img src="img/avatar.jpg" alt="avatar"></div>
 								<div class="profile-user-card__name">Roman Loginov</div>
 								<div class="profile-user-card__description">CUSTOMER</div>
+								<div class="profile-user-card__distance"><span>500</span>
+									<p>miles from you</p>
+								</div>
 							</div>
 							<form class="profile-widthphoto__form" action="#">
 								<!-- button_green -->
@@ -155,37 +159,94 @@
 								</div>
 								<div class="profile-user-overview__item">
 									<div class="profile-user-overview__top">Background Check:</div>
-									<div class="profile-user-overview__verified">Not Verified</div>
+									<div class="profile-user-overview__verified _verified-user">Not Verified</div>
 								</div>
 								<div class="profile-user-overview__item">
 									<div class="profile-user-overview__top">Employees:</div>
 									<div class="profile-user-overview__employees"><span>1</span></div>
 								</div>
 							</div>
-							<!-- profile-user-request_expectation profile-user-request_approved profile-user-request_failure -->
-							<div class="profile-user-request">
-								<div class="profile-user-request__title">Background Check</div>
-								<div class="profile-user-request__text">
-									<p>
-										Pass verification and increase youramong other
-										specialists, therebyadding customer confidence!
-									</p>
-									<p>
-										A backhround check of background investigation is the process of serching for and
-										compiling thecriminal records, commercial records, and financial records or an individual
-										or organization.
-									</p>
+							<div class="profile-user-payment">
+								<div class="profile-user-payment__title title_middle">
+									<img src="img/icons/Cube.svg" alt="+">
+									<span>Payment methods</span>
 								</div>
-								<a href="#" data-popup="#verification-request" class="profile-user-request__button button button_blue _fw">Verification request</a>
+								<div class="profile-user-payment__text">This speciallist accept payments via:</div>
+								<div class="profile-user-payment__ways">
+									<div class="profile-user-payment__way"><img src="img/Pay/Master-card.png" alt="Pay"><span></span>
+									</div>
+									<div class="profile-user-payment__way"><img src="img/Pay/G-pay.png" alt="Pay"><span>text</span>
+									</div>
+									<div class="profile-user-payment__way"><img src="img/Pay/G-pay.png" alt="Pay">
+									</div>
+									<div class="profile-user-payment__way"><img src="img/Pay/G-pay.png" alt="Pay"><span>text</span>
+									</div>
+								</div>
+							</div>
+							<div class="profile-user-specialist">
+								<div class="profile-user-specialist__title title_middle">
+									<img src="img/icons/Settings.svg" alt="+">
+									<span>Specialisties</span>
+								</div>
+								<div class="profile-user-specialist__body">
+									<div class="profile-user-specialist__item _profession-popular">
+										<div class="profile-user-specialist__icon"><img src="img/icons/Carpet-cleaner.svg" alt="cleaner"></div>
+										<div class="profile-user-specialist__info">
+											<div class="profile-user-specialist__profession">Handyman</div>
+											<div class="profile-user-specialist__popular">Popular</div>
+										</div>
+									</div>
+									<div class="profile-user-specialist__item">
+										<div class="profile-user-specialist__icon"><img src="img/icons/Delivery-truck.svg" alt="cleaner"></div>
+										<div class="profile-user-specialist__info">
+											<div class="profile-user-specialist__profession">Plumbers</div>
+											<div class="profile-user-specialist__popular">Popular</div>
+										</div>
+									</div>
+									<div class="profile-user-specialist__item _profession-popular">
+										<div class="profile-user-specialist__icon"><img src="img/icons/Solar-panel.svg" alt="cleaner"></div>
+										<div class="profile-user-specialist__info">
+											<div class="profile-user-specialist__profession">Handyman</div>
+											<div class="profile-user-specialist__popular">Popular</div>
+										</div>
+									</div>
+									<div class="profile-user-specialist__item">
+										<div class="profile-user-specialist__icon"><img src="img/icons/Window-cleaner.svg" alt="cleaner"></div>
+										<div class="profile-user-specialist__info">
+											<div class="profile-user-specialist__profession">Handyman</div>
+											<div class="profile-user-specialist__popular">Popular</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="profile-widthphoto__projects">
+							<div class="profile-user-zero">
+								<div class="profile-user-zero__icon"><img src="img/icons/No_projects.svg" alt="+"></div>
+								<div class="profile-user-zero__text">You don't have any projects yet</div>
+							</div>
 							<div class="profile-user-projects">
 								<div class="profile-user-projects__title">Featured Projects</div>
 								<div class="profile-user-projects__wrapp">
 									<div class="profile-user-projects__project profile-user-project">
 										<div class="profile-user-project__body">
-											<a href="page-404.html" class="profile-user-project__image-ibg"><img src="img/people/professional2_mobile.jpg" alt="professional"></a>
+											<!-- слайдер -->
+											<div class="profile-user-project__slider swiper">
+												<div class="profile-user-project__wrapper swiper-wrapper">
+													<div class="profile-user-project__slide swiper-slide">
+														<div class="profile-user-project__image"><img src="img/people/professional2_mobile.jpg" alt="professional">
+														</div>
+													</div>
+													<div class="profile-user-project__slide swiper-slide">
+														<div class="profile-user-project__image"><img src="img/people/male-plumber.jpg" alt="professional">
+														</div>
+													</div>
+													<div class="profile-user-project__slide swiper-slide">
+														<div class="profile-user-project__image"><img src="img/people/man_mobile.jpg" alt="professional">
+														</div>
+													</div>
+												</div>
+											</div>
 											<div class="profile-user-project__content">
 												<div class="profile-user-project__title">Project 1</div>
 												<div class="profile-user-project__text">Lorem ipsum dolor sit amet, consectetur
@@ -195,7 +256,22 @@
 									</div>
 									<div class="profile-user-projects__project profile-user-project">
 										<div class="profile-user-project__body">
-											<a href="page-404.html" class="profile-user-project__image-ibg"><img src="img/people/male-plumber.jpg" alt="male-plumber"></a>
+											<div class="profile-user-project__slider swiper">
+												<div class="profile-user-project__wrapper swiper-wrapper">
+													<div class="profile-user-project__slide swiper-slide">
+														<div class="profile-user-project__image"><img src="img/people/professional2_mobile.jpg" alt="professional">
+														</div>
+													</div>
+													<div class="profile-user-project__slide swiper-slide">
+														<div class="profile-user-project__image"><img src="img/people/male-plumber.jpg" alt="professional">
+														</div>
+													</div>
+													<div class="profile-user-project__slide swiper-slide">
+														<div class="profile-user-project__image"><img src="img/people/man_mobile.jpg" alt="professional">
+														</div>
+													</div>
+												</div>
+											</div>
 											<div class="profile-user-project__content">
 												<div class="profile-user-project__title">Project 2</div>
 												<div class="profile-user-project__text">Lorem ipsum dolor sit amet, consectetur
@@ -205,8 +281,22 @@
 									</div>
 									<div class="profile-user-projects__project profile-user-project">
 										<div class="profile-user-project__body">
-											<a href="page-404.html" class="profile-user-project__image-ibg"><img src="img/people/man_mobile.jpg" alt="man">
-											</a>
+											<div class="profile-user-project__slider swiper">
+												<div class="profile-user-project__wrapper swiper-wrapper">
+													<div class="profile-user-project__slide swiper-slide">
+														<div class="profile-user-project__image"><img src="img/people/professional2_mobile.jpg" alt="professional">
+														</div>
+													</div>
+													<div class="profile-user-project__slide swiper-slide">
+														<div class="profile-user-project__image"><img src="img/people/male-plumber.jpg" alt="professional">
+														</div>
+													</div>
+													<div class="profile-user-project__slide swiper-slide">
+														<div class="profile-user-project__image"><img src="img/people/man_mobile.jpg" alt="professional">
+														</div>
+													</div>
+												</div>
+											</div>
 											<div class="profile-user-project__content">
 												<div class="profile-user-project__title">Project 2</div>
 												<div class="profile-user-project__text">Lorem ipsum dolor sit amet, consectetur
@@ -217,6 +307,72 @@
 								</div>
 								<div class="profile-user-projects__yet">
 									<button type="button" class="profile-user-projects__btn"></button>
+								</div>
+							</div>
+							<!-- <div class="account-settings__projects projects-account-settings">
+                        <div class="projects-account-settings__title title__settings">Featured Projects</div>
+                        <form action="#" class="projects-account-settings__form">
+                           <div class="projects-account-settings__inputs">
+                              <div class="projects-account-settings__file-row">
+                                 <input autocomplete="off" type="file" accept=".jpg, .png, .jpeg" name="form[]"
+                                    data-error="" placeholder="" class="projects-account-settings__file">
+                                 <div class="projects-account-settings__file-btn  button_blue">Upload new photos</div>
+                              </div>
+                              <button type="submit" name="form[]"
+                                 class="projects-account-settings__select _icon-sellect-all button button_lightblue">Select
+                                 All
+                              </button>
+                           </div>
+                           <div class="projects-account-settings__images">
+                              <a href="#" class="projects-account-settings__image"><img
+                                    src="img/people/male-plumber.jpg" alt="cleaner"></a>
+                              <a href="#" class="projects-account-settings__image"><img
+                                    src="img/people/professional2_mobile.jpg" alt="professional"></a>
+                              <a href="#" class="projects-account-settings__image"><img src="img/people/man_mobile.jpg"
+                                    alt="man with dog"></a>
+                           </div>
+                        </form>
+                     </div> -->
+							<div class="window-full-chats window-full-chats_start">
+								<div class="window-full-chats__body">
+									<div class="window-full-chats__header header-full-chats">
+										<div class="header-full-chats__content">
+											<div class="header-full-chats__back _icon-Arrow"><a href="#">Back</a></div>
+											<div class="header-full-chats__name">Amanda</div>
+											<div class="header-full-chats__avatar _avatar-online"><img src="img/ava-message/ava_message1.jpg" alt="">
+											</div>
+										</div>
+									</div>
+									<div data-popup="#start-conversation" class="window-full-chats__start-conversation start-conversation-chats">
+										<div class="start-conversation-chats__icon _icon-Dialog1"></div>
+										<div class="start-conversation-chats__text">Start Conversation</div>
+									</div>
+									<div class="window-full-chats__messages message-chat">
+										<div class="message-chat__from">
+											<div class="message-chat__body-from">
+												<div class="message-chat__ava"><img src="img/ava-message/ava_message1.jpg" alt="ava">
+												</div>
+												<div class="message-chat__text">Hello! How are you?</div>
+											</div>
+										</div>
+										<div class="message-chat__to">
+											<div class="message-chat__body-to">
+												<div class="message-chat__ava"><img src="img/ava-message/ava_message2.jpg" alt="ava">
+												</div>
+												<div class="message-chat__text">Hi, everything is great!</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="window-full-chats__enter">
+										<form action="#" class="window-full-chats__form">
+											<textarea class="window-full-chats__message" name="message" id="full-chats-message" placeholder="Message..." data-placeholder="Message..."></textarea>
+											<button type="submit" class="window-full-chats__button"><img src="img/icons/Arrow-send.svg" alt="-->"></button>
+											<div class="window-full-chats__myava _avatar-online">
+												<img src="img/ava-message/ava_message4.jpg" alt="ava">
+											</div>
+										</form>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -422,7 +578,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230125200533"></script>
+	<script src="js/app.min.js?_v=20230128133249"></script>
 </body>
 
 </html>

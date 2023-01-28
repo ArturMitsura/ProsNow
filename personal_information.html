@@ -6,13 +6,13 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230125200533">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230128133249">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230125200533"></script>
-	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20230125200533" rel="stylesheet" />
-	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20230125200533"></script>
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230128133249"></script>
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?_v=20230128133249" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?_v=20230128133249"></script>
 </head>
 
 <body>
@@ -47,6 +47,16 @@
 										Code <span>(optionally)</span></label>
 									<input data-validate data-required id="form-personal-information-zipcode" class="form-personal-information__input" type="number" autocomplete="off" name="form[]" data-error="" placeholder="12345">
 								</div>
+								<div class="correction-account-settings__col2 correction-account-settings__col2_account">
+									<label class="correction-account-settings__label" for="quantity2-label">Employees</label>
+									<div data-quantity="" class="correction-account-settings__quantity quantity">
+										<button data-quantity-plus="" type="button" class="quantity__button quantity__button_plus">+</button>
+										<div class="quantity__input">
+											<input id="quantity2-label" data-quantity-value="" autocomplete="off" type="text" name="form[]" value="1">
+										</div>
+										<button data-quantity-minus="" type="button" class="quantity__button quantity__button_minus">-</button>
+									</div>
+								</div>
 								<div class="form-personal-information__row">
 									<button type="submit" class="form-personal-information__button button button_glass">Back</button>
 									<button type="submit" class="form-personal-information__button button button_green-mark">Confirm</button>
@@ -70,7 +80,7 @@
 			</section>
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20230125200533"></script>
+	<script src="js/app.min.js?_v=20230128133249"></script>
 </body>
 
 </html>
