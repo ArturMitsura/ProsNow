@@ -1808,19 +1808,23 @@ body::after {
   min-width: 0;
 }
 
-.profile-user-project .profile-user-project__slider {
-  min-width: 13.75rem;
+.profile-user-project__slide {
+  opacity: 0;
 }
 
-.profile-user-project__image {
-  position: relative;
+.profile-user-project__slide.swiper-slide-active {
+  opacity: 1;
 }
 
-.profile-user-project__image img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
+.profile-user-project__image-ibg {
+  /* position: relative;
+  img {
+     width: 100%;
+     height: 100%;
      object-fit: cover;
+     overflow: hidden;
+  } */
+  padding-top: 63%;
 }
 
 .profile-user-project__content {
@@ -8521,8 +8525,11 @@ input[type=number]:focus {
   }
 
   .profile-user-project .profile-user-project__slider {
+    min-width: 13.75rem;
     max-width: 16.25rem;
     max-height: 10.1875rem;
+    width: 100%;
+    height: 100%;
   }
 
   .new-project-popup__file-instruction span:first-child {
@@ -10566,6 +10573,22 @@ input[type=number]:focus {
 
   .form-log-in {
     max-width: 72.8%;
+  }
+
+  .start-conversation-chats__text {
+    width: 15.625rem;
+  }
+
+  .message-chat__from {
+    margin: 0.625rem 5rem 0.625rem 1.1875rem;
+  }
+
+  .message-chat__text {
+    padding: 0.3125rem 0.3125rem;
+  }
+
+  .message-chat__to {
+    margin: 0.625rem 1.1875rem 0.625rem 5rem;
   }
 
   .correction-account-settings__user-data {
