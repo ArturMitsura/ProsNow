@@ -1531,12 +1531,16 @@ body::after {
 .profile-user-card__avatar {
   text-align: center;
   margin: 0 auto 1.5rem auto;
-  max-width: 7.5625rem;
-  max-height: 7.5625rem;
+  width: 7.5625rem;
+  height: 7.5625rem;
 }
 
 .profile-user-card__avatar img {
   border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .profile-user-card__name {
