@@ -5331,6 +5331,10 @@ input[type=number]:focus {
 // ._icon-Dialog1
 ._icon-Dialog1 {} */
 
+.navigation-chats-body {
+  overflow: auto;
+}
+
 .navigation-chats-body__nochats {
   padding-top: 1.9375rem;
   font-size: 1.0625rem;
@@ -5414,6 +5418,14 @@ input[type=number]:focus {
   line-height: 1.3913043478;
 }
 
+.full-chats {
+  height: calc(100vh - 100px);
+}
+
+.full-chats__container {
+  height: 100%;
+}
+
 .full-chats__hide-body {
   position: fixed;
   right: -100%;
@@ -5458,7 +5470,7 @@ input[type=number]:focus {
   grid-template-columns: minmax(375px, 439px) minmax(375px, 1fr);
   -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
-  min-height: 80vh;
+  height: 100%;
 }
 
 .full-chats__wrapper_hide {
@@ -5470,8 +5482,10 @@ input[type=number]:focus {
 }
 
 .navigation-full-chats {
-  padding: 1.25rem 0;
+  padding: 1.25rem 0 3.125rem 0;
   background-color: #fff;
+  height: 100%;
+  overflow: hidden;
 }
 
 .navigation-full-chats__top {
@@ -5492,8 +5506,30 @@ input[type=number]:focus {
   width: 100%;
 }
 
+.navigation-full-chats__nochats {
+  padding-top: 1.9375rem;
+  font-size: 1.0625rem;
+  line-height: 1.3529411765;
+  font-weight: 300;
+  padding-left: 1.875rem;
+}
+
+.navigation-chats-body {
+  overflow: auto;
+  height: 100%;
+}
+
 .window-full-chats {
   background: url("../img/chat_background.jpg") center/cover no-repeat;
+  overflow: hidden;
+  /* &__rezise {
+     width: 170px;
+     white-space: pre-wrap;
+     word-wrap: break-word;
+     visibility: hidden;
+     position: absolute;
+     left: -9999px;
+  } */
 }
 
 .window-full-chats_start {
@@ -5526,8 +5562,10 @@ input[type=number]:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   height: 100%;
-  min-height: 18.75rem;
 }
 
 .window-full-chats__form {
@@ -5699,11 +5737,34 @@ input[type=number]:focus {
   max-width: 13.5625rem;
 }
 
-.dialog-chats-navigation__date {
+.dialog-chats-navigation__date-noread {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.3125rem;
   color: rgba(0, 0, 0, 0.5);
   font-size: 0.9375rem;
   line-height: 1.3333333333;
   font-weight: 300;
+}
+
+.dialog-chats-navigation__noread {
+  padding: 0.125rem;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #1e6ab1;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  line-height: 120%;
+  border-radius: 50%;
 }
 
 .header-full-chats {
@@ -5727,6 +5788,30 @@ input[type=number]:focus {
   font-weight: 500;
   line-height: 1.4285714286;
   padding: 0.5625rem 0.75rem;
+  position: relative;
+}
+
+.header-full-chats__content::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 1.875rem;
+  height: 1.875rem;
+  bottom: -80%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: url("../img/Loading.png") center/auto 100% no-repeat;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+  -webkit-animation: animate-loading 1s linear infinite;
+          animation: animate-loading 1s linear infinite;
+  opacity: 0;
+}
+
+._load-messages .header-full-chats__content::before {
+  opacity: 0.7;
 }
 
 .window-full-chats_start .header-full-chats__content {
@@ -5808,7 +5893,7 @@ input[type=number]:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0.625rem 7.5rem 0.625rem 1.1875rem;
+  margin: 0.625rem 5rem 0.625rem 1.1875rem;
 }
 
 .message-chat__body-from {
@@ -5833,10 +5918,10 @@ input[type=number]:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 0.5625rem;
-     -moz-column-gap: 0.5625rem;
-          column-gap: 0.5625rem;
-  padding: 0.375rem 0.5625rem;
+  -webkit-column-gap: 0.4375rem;
+     -moz-column-gap: 0.4375rem;
+          column-gap: 0.4375rem;
+  padding: 0.375rem 0.5625rem 0.375rem 0.5625rem;
   background-color: #cdf3ff;
   border-radius: 1.8125rem;
 }
@@ -5857,17 +5942,60 @@ input[type=number]:focus {
 }
 
 .message-chat__text {
-  padding-right: 1.125rem;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+
+.message-chat__time {
+  font-family: "FuturaPT";
+  font-size: 0.75rem;
+  font-weight: 450;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  line-height: 120%;
+  float: right;
+  padding: 0.3125rem 0 0 0.625rem;
+}
+
+.message-chat__am-pm {
+  padding-left: 0.125rem;
+}
+
+.message-chat__status {
+  margin-left: 0.1875rem;
+  width: 0.9375rem;
+}
+
+.message-chat__status span {
+  display: none;
+  padding-left: 0.0625rem;
+}
+
+.message-chat__status span img {
+  max-width: 0.9375rem;
+}
+
+._message-sending .message-chat__status span:first-child {
+  display: block;
+}
+
+._message-received .message-chat__status span:nth-child(2) {
+  display: block;
+}
+
+._message-read .message-chat__status span:last-child {
+  display: block;
 }
 
 .message-chat__to {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0.625rem 1.1875rem 0.625rem 7.5rem;
+  margin: 0.625rem 1.1875rem 0.625rem 5rem;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -8566,9 +8694,46 @@ input[type=number]:focus {
     display: none;
   }
 
-  .header-full-chats__content {
-    opacity: 0;
+  .navigation-chats-body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+  .navigation-chats-body::-webkit-scrollbar {
+    width: 8px;
+    background-color: #fff;
     pointer-events: none;
+  }
+
+  .navigation-chats-body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .navigation-chats-body::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .message-chat::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+  .message-chat::-webkit-scrollbar {
+    width: 8px;
+    background-color: #fff;
+    pointer-events: none;
+  }
+
+  .message-chat::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .message-chat::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.6);
   }
 
   .correction-account-settings__txtarea {
@@ -9056,7 +9221,7 @@ input[type=number]:focus {
     font-size: 1.0625rem;
   }
 
-  .dialog-chats-navigation__date {
+  .dialog-chats-navigation__date-noread {
     font-size: 0.9375rem;
   }
 
@@ -10580,7 +10745,7 @@ input[type=number]:focus {
   }
 
   .message-chat__from {
-    margin: 0.625rem 5rem 0.625rem 1.1875rem;
+    margin: 0.625rem 3.75rem 0.625rem 1.1875rem;
   }
 
   .message-chat__text {
@@ -10588,7 +10753,7 @@ input[type=number]:focus {
   }
 
   .message-chat__to {
-    margin: 0.625rem 1.1875rem 0.625rem 5rem;
+    margin: 0.625rem 1.1875rem 0.625rem 3.75rem;
   }
 
   .correction-account-settings__user-data {
@@ -11086,7 +11251,7 @@ input[type=number]:focus {
     max-width: 12.5rem;
   }
 
-  .dialog-chats-navigation__date {
+  .dialog-chats-navigation__date-noread {
     font-size: 0.75rem;
   }
 
@@ -12449,13 +12614,13 @@ input[type=number]:focus {
 }
 
 @supports (font-size: clamp( 0.75rem , 0.6615566038rem  +  0.3773584906vw , 0.9375rem )) {
-    .dialog-chats-navigation__date {
+    .dialog-chats-navigation__date-noread {
       font-size: clamp( 0.75rem , 0.6615566038rem  +  0.3773584906vw , 0.9375rem );
     }
 }
 
 @supports not (font-size: clamp( 0.75rem , 0.6615566038rem  +  0.3773584906vw , 0.9375rem )) {
-    .dialog-chats-navigation__date {
+    .dialog-chats-navigation__date-noread {
       font-size: calc(0.75rem + 0.1875 * (100vw - 23.4375rem) / 49.6875);
     }
 }
