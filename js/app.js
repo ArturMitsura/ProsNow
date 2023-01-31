@@ -8905,7 +8905,6 @@
                 document.documentElement.classList.remove("_chatPros");
             }
         }
-        document.querySelector("textarea");
         document.querySelectorAll(".window-full-chats__message").forEach((el => {
             el.style.height = el.setAttribute("style", "height: " + el.scrollHeight + "px");
             el.classList.add("auto");
