@@ -697,9 +697,6 @@ svg path {
   opacity: 0;
 }
 
-.no-webp ._loading-button::before{
-  background: url("../img/Loading.png") center/auto 85% no-repeat; }
-
 ._loading-button::before {
   content: "";
   position: absolute;
@@ -710,6 +707,7 @@ svg path {
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
           transform: scale(0.9);
+  background: url("../img/Loading.png") center/auto 85% no-repeat;
   -webkit-animation: animate-loading 1s linear infinite;
           animation: animate-loading 1s linear infinite;
 }
@@ -718,9 +716,6 @@ svg path {
   position: relative;
   overflow: hidden;
 }
-
-.no-webp ._loading-block::before{
-  background: #fff url("../img/Loading.png") center/auto 50px no-repeat; }
 
 ._loading-block::before {
   content: "";
@@ -731,6 +726,7 @@ svg path {
   top: 50%;
   left: 50%;
   opacity: 0.7;
+  background: #fff url("../img/Loading.png") center/auto 50px no-repeat;
   -webkit-animation: animate-loading 1s linear infinite;
           animation: animate-loading 1s linear infinite;
 }
@@ -2334,9 +2330,6 @@ body::after {
   min-height: 12.5rem;
 }
 
-.no-webp .successfully-billing-pay__congratulation::before{
-  background: url("../img/congratulation.png") center/contain no-repeat; }
-
 .successfully-billing-pay__congratulation::before {
   content: "";
   position: absolute;
@@ -2344,6 +2337,7 @@ body::after {
   height: 100%;
   top: 0;
   left: 0;
+  background: url("../img/congratulation.png") center/contain no-repeat;
   opacity: 0.35;
 }
 
@@ -2466,10 +2460,6 @@ body::after {
   height: 100%;
   position: relative;
   padding: 0.75rem 1.5rem;
-}
-
-.header__location_top .header__city {
-  line-height: 105%;
 }
 
 .header__location._location-Pros .location-form {
@@ -2744,9 +2734,6 @@ body::after {
   overflow: hidden;
 }
 
-.no-webp .alerts-body._loading-alerts::before{
-  background: #fff url("../img/Loading.png") center/auto 10% no-repeat; }
-
 .alerts-body._loading-alerts::before {
   content: "";
   position: absolute;
@@ -2756,6 +2743,7 @@ body::after {
   top: 50%;
   left: 50%;
   opacity: 0.7;
+  background: #fff url("../img/Loading.png") center/auto 10% no-repeat;
   -ms-scroll-chaining: none;
       overscroll-behavior: none;
   -webkit-animation: animate-loading 1s linear infinite;
@@ -3214,10 +3202,8 @@ input[type=number]:focus {
   -moz-appearance: textfield;
 }
 
-.no-webp .main-page{
-  background: #eefbff url("../img/background-main.png") 30% -50px/cover no-repeat; }
-
 .main-page {
+  background: #eefbff url("../img/background-main.png") 30% -50px/cover no-repeat;
   max-width: 90rem;
   margin: 0 auto;
 }
@@ -3452,9 +3438,6 @@ input[type=number]:focus {
   overflow: hidden;
 }
 
-.no-webp .map-page__location._loading-map::before{
-  background: #fff url("../img/Loading.png") center/auto 4% no-repeat; }
-
 .map-page__location._loading-map::before {
   content: "";
   position: absolute;
@@ -3464,6 +3447,7 @@ input[type=number]:focus {
   top: 50%;
   left: 50%;
   opacity: 0.7;
+  background: #fff url("../img/Loading.png") center/auto 4% no-repeat;
   -webkit-animation: animate-loading 1s linear infinite;
           animation: animate-loading 1s linear infinite;
 }
@@ -5377,8 +5361,9 @@ input[type=number]:focus {
   font-weight: 300;
 }
 
-.no-webp .window-zero-chats{
-  background: url("../img/chat_background.jpg") center/cover no-repeat; }
+.window-zero-chats {
+  background: url("../img/chat_background.jpg") center/cover no-repeat;
+}
 
 .window-zero-chats__content {
   height: 100%;
@@ -5561,10 +5546,8 @@ input[type=number]:focus {
   height: 100%;
 }
 
-.no-webp .window-full-chats{
-  background: url("../img/chat_background.jpg") center/cover no-repeat; }
-
 .window-full-chats {
+  background: url("../img/chat_background.jpg") center/cover no-repeat;
   overflow: hidden;
   /* &__rezise {
      width: 170px;
@@ -5852,9 +5835,6 @@ input[type=number]:focus {
   position: relative;
 }
 
-.no-webp .header-full-chats__content::before{
-  background: url("../img/Loading.png") center/auto 100% no-repeat; }
-
 .header-full-chats__content::before {
   content: "";
   position: absolute;
@@ -5866,6 +5846,7 @@ input[type=number]:focus {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+  background: url("../img/Loading.png") center/auto 100% no-repeat;
   -ms-scroll-chaining: none;
       overscroll-behavior: none;
   -webkit-animation: animate-loading 1s linear infinite;
@@ -9771,8 +9752,9 @@ input[type=number]:focus {
     padding: 1.125rem 0 1.3125rem 0;
   }
 
-  .no-webp .main-page{
-    background: url("../img/background-main.png") 30% 0/cover no-repeat; }
+  .main-page {
+    background: url("../img/background-main.png") 30% 0/cover no-repeat;
+  }
 
   .main-page__description {
     padding-top: 0.875rem;
@@ -9986,10 +9968,8 @@ input[type=number]:focus {
     padding: 0 0 1.5rem 0;
   }
 
-  .no-webp .create-account__info-wrapp{
-    background: url("../img/people/professional2_mobile.jpg") 0 100%/100% auto no-repeat; }
-
   .create-account__info-wrapp {
+    background: url("../img/people/professional2_mobile.jpg") 0 100%/100% auto no-repeat;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -10065,10 +10045,8 @@ input[type=number]:focus {
     padding: 0 0 1.5rem 0;
   }
 
-  .no-webp .personal-information__info-wrapp{
-    background: url("../img/people/young-woman_mobile.jpg") 0 100%/100% auto no-repeat; }
-
   .personal-information__info-wrapp {
+    background: url("../img/people/young-woman_mobile.jpg") 0 100%/100% auto no-repeat;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -10724,8 +10702,11 @@ input[type=number]:focus {
     padding: 0.75rem 0.5rem 0.75rem 0;
   }
 
-  .header__location_top .header__city {
-    display: none;
+  .header__location_2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    padding-left: 1.25rem;
   }
 
   .header__city {
@@ -10737,6 +10718,10 @@ input[type=number]:focus {
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
     gap: 0.25rem;
+  }
+
+  .header__location_2 .location-form {
+    left: -6.25rem;
   }
 
   .main-image__location_1 {
@@ -13327,37 +13312,4 @@ input[type=number]:focus {
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
   }
-}
-
-.webp ._loading-button::before{ background: url(../img/Loading.webp) center/auto 85% no-repeat; }
-
-.webp ._loading-block::before{ background: #fff url(../img/Loading.webp) center/auto 50px no-repeat; }
-
-.webp .successfully-billing-pay__congratulation::before{ background: url(../img/congratulation.webp) center/contain no-repeat; }
-
-.webp .alerts-body._loading-alerts::before{ background: #fff url(../img/Loading.webp) center/auto 10% no-repeat; }
-
-.webp .main-page{ background: #eefbff url(../img/background-main.webp) 30% -50px/cover no-repeat; }
-
-.webp .map-page__location._loading-map::before{ background: #fff url(../img/Loading.webp) center/auto 4% no-repeat; }
-
-.webp .window-zero-chats{ background: url(../img/chat_background.webp) center/cover no-repeat; }
-
-.webp .window-full-chats{ background: url(../img/chat_background.webp) center/cover no-repeat; }
-
-.webp .header-full-chats__content::before{ background: url(../img/Loading.webp) center/auto 100% no-repeat; }
-
-@media (max-width: 47.99875em){
-
-  .webp .main-page{ background: url(../img/background-main.webp) 30% 0/cover no-repeat; }
-}
-
-@media (max-width: 47.99875em){
-
-  .webp .create-account__info-wrapp{ background: url(../img/people/professional2_mobile.webp) 0 100%/100% auto no-repeat; }
-}
-
-@media (max-width: 47.99875em){
-
-  .webp .personal-information__info-wrapp{ background: url(../img/people/young-woman_mobile.webp) 0 100%/100% auto no-repeat; }
 }
