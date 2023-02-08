@@ -3040,10 +3040,10 @@ body::after {
 .menu-pc {
   padding: 0.625rem 0 0 0;
   position: absolute;
-  min-width: 9.9375rem;
+  min-width: 11.25rem;
   min-height: 11.125rem;
   width: 100%;
-  height: 100%;
+  height: auto;
   top: 100%;
   right: 0;
   background-color: #ffffff;
@@ -3741,12 +3741,11 @@ input[type=number]:focus {
 
 .billing-plans__tariffes {
   padding: 3.5rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 1.875rem;
-     -moz-column-gap: 1.875rem;
-          column-gap: 1.875rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.875rem;
   border-bottom: 0.0625rem solid rgba(137, 137, 137, 0.3);
 }
 
@@ -5100,6 +5099,34 @@ input[type=number]:focus {
   font-size: 1.5rem;
   line-height: 1.2916666667;
   padding-bottom: 1.125rem;
+}
+
+.profile-user-loads__title a {
+  font-size: 1.125rem;
+  opacity: 0.6;
+  margin-left: 0.9375rem;
+  position: relative;
+}
+
+.profile-user-loads__title a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0.125rem;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #313131;
+  opacity: 0.6;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.profile-user-loads__title a:hover::before {
+  width: 100%;
 }
 
 .profile-user-loads__zero {
@@ -9115,9 +9142,7 @@ input[type=number]:focus {
   }
 
   .billing-plans__tariffes {
-    -webkit-column-gap: 1.875rem;
-       -moz-column-gap: 1.875rem;
-            column-gap: 1.875rem;
+    gap: 1.875rem;
   }
 
   .billing-plans__tariffes {
@@ -11160,9 +11185,7 @@ input[type=number]:focus {
   }
 
   .billing-plans__tariffes {
-    -webkit-column-gap: 1.5625rem;
-       -moz-column-gap: 1.5625rem;
-            column-gap: 1.5625rem;
+    gap: 1.5625rem;
   }
 
   .billing-plans__tariffes {
@@ -12230,19 +12253,15 @@ input[type=number]:focus {
     }
 }
 
-@supports ((-moz-column-gap: clamp( 1.5625rem , 1.4150943396rem  +  0.6289308176vw , 1.875rem )) or (column-gap: clamp( 1.5625rem , 1.4150943396rem  +  0.6289308176vw , 1.875rem ))) {
+@supports (gap: clamp( 1.5625rem , 1.4150943396rem  +  0.6289308176vw , 1.875rem )) {
     .billing-plans__tariffes {
-      -webkit-column-gap: clamp( 1.5625rem , 1.4150943396rem  +  0.6289308176vw , 1.875rem );
-         -moz-column-gap: clamp( 1.5625rem , 1.4150943396rem  +  0.6289308176vw , 1.875rem );
-              column-gap: clamp( 1.5625rem , 1.4150943396rem  +  0.6289308176vw , 1.875rem );
+      gap: clamp( 1.5625rem , 1.4150943396rem  +  0.6289308176vw , 1.875rem );
     }
 }
 
-@supports not ((-moz-column-gap: clamp( 1.5625rem , 1.4150943396rem  +  0.6289308176vw , 1.875rem )) or (column-gap: clamp( 1.5625rem , 1.4150943396rem  +  0.6289308176vw , 1.875rem ))) {
+@supports not (gap: clamp( 1.5625rem , 1.4150943396rem  +  0.6289308176vw , 1.875rem )) {
     .billing-plans__tariffes {
-      -webkit-column-gap: calc(1.5625rem + 0.3125 * (100vw - 23.4375rem) / 49.6875);
-         -moz-column-gap: calc(1.5625rem + 0.3125 * (100vw - 23.4375rem) / 49.6875);
-              column-gap: calc(1.5625rem + 0.3125 * (100vw - 23.4375rem) / 49.6875);
+      gap: calc(1.5625rem + 0.3125 * (100vw - 23.4375rem) / 49.6875);
     }
 }
 
